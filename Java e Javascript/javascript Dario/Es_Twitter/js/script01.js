@@ -6,7 +6,7 @@ let nomeUtente= document.querySelector("#nome");
 let password= document.querySelector("#password");
 
 let regexPassw = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%#?&])[A-Za-z\d@$!%*#?&]{8,20}$/;
-
+let mammt = mamt.document;
 
 function login() {
     
