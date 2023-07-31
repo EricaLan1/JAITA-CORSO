@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="demo">Questo e' un div di demo</div>
+    <h2>Spesa</h2>
+    <ul id="listaSpesa">
+        <li class="txtBlue" id="uno">Pasta</li>
+        <li class="txtBlue" id="due">Pizza</li>
+        <li class="txtBlue" id="tre">Sushi</li>
+    </ul>
+
+    <h2>Libri</h2>
+    <ul id="listaLibri">
+        <li>Acotar</li>
+        <li>Circe</li>
+        <li>Principe Crudele</li>
+        <li>Casa sotto il mare celeste</li>
+    </ul>
+    <script>
+        //querySelectorAll ("sinstassi CSS");
+        //recupera piu' elementi contemporaneamente, costruisce una NodeList(parente stretto degli array)
+        //let lis= document.querySelectorAll("li");//nodelist
+        let lisSpesa= document.querySelectorAll("ul#listaSpesa li.txtBlue");
+
+        //leggo il contenuto del primo li
+        console.log(lisSpesa[0].innerHTML); 
+        //legge e scrive solo testo
+        console.log(lisSpesa[0].textContent);
+
+        //modifico il contenujto del terzo li
+        lisSpesa[2].textContent = "Pan di stelle";
+        //vogglio recuperare i testi in tutti gli li
+        lisSpesa.forEach(li =>{
+            console.log(li.textContent);
+        })
+        
+        //Voglio m
+        let lisLibri = document.querySelectorAll("ul#listaLibri li");
+
+        for(let i = 0; i<lisLibri.length; i++){
+            lisLibri[i].setAttribute("class","txtRed"); }
+
+            //ATT: adesso passero' yun id al queriSelectorALL
+
+            let liVino = document.querySelectorAll("#due"); //crea comunque una nodelist elemento all'interno
+
+            console.log(liVino);
+            liVino[0].textContent = "Birra";
+    </script>
+</body>
+</html>

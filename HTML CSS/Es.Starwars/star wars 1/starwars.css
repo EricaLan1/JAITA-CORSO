@@ -1,0 +1,40 @@
+body{background-image: url(starwars4.jpg);background-size: 1920px; }
+.personaggio1 {color: #a07e10;}
+.personaggio2 {color: #a07e10;}
+.personaggio3 {color:#508b20}
+.personaggio4 {color:#c70a03}
+.personaggio5 {color: #c75b03;}
+.personaggio6 {color: #c70a03;}
+.personaggio7 {color:antiquewhite}
+.personaggio8 {color: azure;}
+.personaggio9 {color: #a07e10;}
+.personaggio10 {color: #5960c5;}
+.personaggio11 {color: #865fb9;}
+.personaggio12 {color: #a07e10;}
+.personaggio13 {color:#694d27}
+.personaggio14 {color: #c70a03;}
+.personaggio15 {color:#694d27}
+.personaggio16 {color: #c70a03;}
+.personaggio17 {color:#5f5f5f}
+.personaggio18 {color: #c70a03;}
+.personaggio19 {color: #5f5f5f;}
+.personaggio20 {color: #c70a03;}
+.personaggio21 {color:#7c6969}
+.personaggio22 {color:#c70a03}
+.personaggio23 {color:#7c6969}
+.centered {text-align: center;}
+
+p{color: #fffefe;font-size: 18px;}
+h1 { color: #e0e25d;text-align: center;font-family: 'Star Wars', sans-serif;} 
+.sottotitolo{color: #e0e25d;text-align: center;font-size: 15; font-family: roboto;}
+
+.narrazione {color: #e0e25d; font-size: 26px;text-align: center; font-family: roboto;
+line-height: 1.2em; transform: perspective(250px) rotateX(15deg);
+ }
+.scrolltext {height: 200px;}
+
+    
+
+  
+  
+ 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Lista Film</h1>
+    <ul id="listaFilm">
+        <li>Oppenheimer</li>
+        <li>Barbie</li>
+        <li>Mission Impossible</li>
+    </ul>
+
+    <script>
+    //Devo inserire un nuovo Film  all'interno della lista
+    let listaFilm = document.querySelector("#listaFilm");
+    //createElement()crea u nuovo elemento HTML passando il nome del tag
+    let nuovoLI = document.createElement("li"); // <li></li> crea questo
+
+    //createTextNode()crea un nodo testuale da agganciare ad un parent
+    let nuovoTitoloFilm = document.createTextNode("Dune");
+
+    //appendChild()aggancia al genitore il figlio
+    nuovoLI.appendChild(nuovoTitoloFilm); //<li>Dune</li>
+    listaFilm.appendChild(nuovoLI)
+
+    /////////////inserisco un film all'inizio  della lista
+    let nuovoLI2 = document.createElement("li");
+    nuovoLI2.textContent = "Dumbo"; //sto condensando la riga 24 e 27
+        //genitore.appendChild(figlio)
+    listaFilm.prepend(nuovoLI2);
+
+
+    </script>
+
+
+</body>
+</html>

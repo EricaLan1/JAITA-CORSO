@@ -1,0 +1,28 @@
+/*Questo è un commento in CSS */
+
+body {
+background-color: #946682;
+color:#e2beeb;
+}
+h1 {
+    color: #f5e1c4;
+}
+h2 {
+    color:#f3d5d5
+}
+p {
+    font: size 16px;
+}
+.intro {
+    font-size: 20px;
+}
+.centered {
+    text-align: center;
+}
+#conclusione{
+    color: #422257;
+}
+/*
+I selettori hanno un livelo diverso di specificità. Se cui sono regole che vanno in conglitto, i selettori più specifici vincono.
+
+ID | CLASSE | TAG |

@@ -1,0 +1,21 @@
+.txtBlue{
+    color: blue;
+}
+
+.txtRed{
+    color: brown;
+}
+
+.underLine{
+    text-decoration: underline;
+}
+
+.txtGreen{
+    color: rgb(70, 124, 74);
+}
+
+.imgRes{
+    width: 300px;
+    height: auto;
+    overflow: hidden;
+}

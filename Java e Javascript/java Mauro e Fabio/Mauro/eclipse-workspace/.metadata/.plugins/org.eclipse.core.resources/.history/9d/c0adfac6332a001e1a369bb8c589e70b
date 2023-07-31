@@ -1,0 +1,9 @@
+package database;
+
+public class TodoDatabase {
+	private final String HOST = "jdbc:mysql://localhost:3306/generation";
+	private final String USER = "app_java";
+	private final String PASS = "java_2023!";
+	
+	
+}

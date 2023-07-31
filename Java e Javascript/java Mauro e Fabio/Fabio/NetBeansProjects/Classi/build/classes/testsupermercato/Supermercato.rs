@@ -1,0 +1,3 @@
+testsupermercato.Cassa
+testsupermercato.Supermercato
+testsupermercato.cassa

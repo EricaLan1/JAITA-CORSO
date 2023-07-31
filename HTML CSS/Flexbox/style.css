@@ -1,0 +1,108 @@
+    /* -------------------------------------------------------------------------- */
+    /*                                   FLEXBOX                                  */
+    /* -------------------------------------------------------------------------- */
+
+.container{
+    /* -------------------------------------------------------------------------- */
+    /*                          PROPRIETA DEL CONTENITORE                         */
+    /* -------------------------------------------------------------------------- */
+
+    display: flex;
+    /* abilita il sistema FLEXBOX che come tutti gli elementi, ha un asse verticale ed una orrizzontale. Su quest'asse avviene la gestione dello spazio e dei figli di questi elementi. Abbiamo bisogno ora dei suoi figli, box interni*/
+
+    flex-direction: row; 
+    /* Valore di default che agisce sulla riga (main axis) possiamo anche invertire gli assi usando flex-direction:column;*/
+
+    /*il valore di default è flex-wrap: nowrap */
+
+    flex-wrap: wrap;
+}
+
+    /* -------------------------------------------------------------------------- */
+    /*                           PER POSIZIONARE I FIGLI                          */
+    /* -------------------------------------------------------------------------- */
+
+    .box {
+
+        border:1px solid black;
+        padding: 1rem;
+        /*posso cambiare l'ordine di rendering dei figli */
+    
+    }
+    
+    .last {
+        order: 1;
+        /*la proprietà order serve per cambiare l'ordine dei figli */
+        /*valori: 0 default | -1 appare prima | 1 appare dopo */
+        /* -5 -4 -3 -2 -1  0  1  2  3  4  5 */
+    }
+    
+      /* .first {
+         se voglio spostare PRIMA devo dare un valore inferiore a 0 
+        order:-1;
+        }
+    */
+      
+    
+    /* poi posso cambiare l'allineamento sul cross-axis di un elemento con 
+    la proprietà align-self  */
+    
+    .big {
+        /* posso cambiare lo spazio occupato dai figli con la proprietà FLEX-GROW */
+        flex-grow: 1;
+        /*1= CRESCI, FIGLIO! */
+        /* occupa lo spazio che ti lasciano i tuoi fratelli */
+        /* il valore di default è flex-grow:0 */
+    }
+    
+    /*flex-shrink fa l'opposto, cioè stringe l'elemento */
+    
+    
+    
+    /* -------------------------------------------------------------------------- */
+    /*                            ESEMPIO HERO SECTION                            */
+    /* -------------------------------------------------------------------------- */
+    
+    .heroSection {
+        height: 100vh;
+    
+        background-image: url('https://source.unsplash.com/1920x1080/?drinks');
+    
+        /*sfrutto flexbox per centrare in orizzontale e verticale un contenuto */
+        display: flex;
+    
+        /*centro in orizzontale */
+        justify-content: center;
+    
+        /*centro in verticale*/
+        align-items: center;
+    }
+    
+    .heroText {
+        font-size: 3rem;
+    }
+    
+    
+    
+    #flexMenu ul {/* <- gli UL dentro l'elemento con ID #flexMenu */
+    
+        /*assegno flexbox a UL perché devo far allineare gli LI, che sono suoi diretti discendenti */
+        display: flex;
+    
+        /*elimino i pallini */
+        list-style-type: none;
+    
+        /*aumento la distanza tra gli elementi con la proprietà GAP */
+    
+        gap: 1rem;
+        /*gap: inserisce uno spazio tra gli elementi sia su righe sia su colonne */
+        /* row-gap e column-gap servono a inserire spazi solo su righe o colonnne; */
+    }
+    
+    #flexMenu a {
+        text-decoration: none; /*toglie il sottolineato dai link */
+    }
+    
+    #flexMenu a {
+    color:#990000;
+    }

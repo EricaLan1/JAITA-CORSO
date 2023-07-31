@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+   <h2>Lista film</h2>
+    <ul id="listaFilm">
+        <li class="txtBlue">Harry Potter</li>
+        <li class="txtBlue">Gli spiriti dell'isola</li>
+        <li class="txtBlue">La sottile linea rossa</li>
+    </ul>
+
+    <script>
+        //idea: aggiungere una classe a quella esistente
+        let listaFilm = document.querySelectorAll('#listaFilm li');
+
+    
+
+        [...listaFilm].forEach(film => {
+         film.classList.add("underLine")
+        console.log(film.classList);
+        });
+
+        /**
+         *  film e' <li>Dune</li>
+         * */
+        [...listaFilm].forEach(film =>{
+            film.addEventListener("click",function() {
+                if(film.classList.contains("underLine")){
+                    film.classList.remove("underLine");
+                
+                }else{
+                    film.classList.add("underLine")
+                }
+            });
+            
+        })
+        
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-image: url(/Es.RecensioneCellulare//immagini/pattern.jpg);
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.wrapper{
+    width: 75%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    background-color: #f5f3f3;
+}
+
+figure{
+    margin: 0;
+    padding: 1rem;
+    border: 1px solid #aaa;
+    background: #fff;
+}
+
+.articleFooter p {
+    font-style: italic;
+     text-align: right;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+h1{
+    font-size: 3.75rem;
+    font-family: 'Permanent Marker', cursive;
+}
+
+h2, h3{
+    font-size: 2rem;
+    scroll-margin-top: 2rem;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.oppo1{
+    width: 30%;
+    height: auto;
+    float:left;
+    margin-left: 1rem;
+    margin-bottom: 5rem;
+}
+
+
+.dueColonne{
+    padding: 3.1em; 
+    background: #f7f7f7;
+    border: 1px solid #ececec;
+
+    column-count: 2;
+    column-gap: 3rem;
+    column-rule: 1px solid #d2d2d2;
+
+    -moz-column-count: 2;
+    -moz-column-gap: 3rem;
+    -moz-column-rule: 1px solid #d2d2d2;
+
+}
+
+/* background-image: url('image.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed; */

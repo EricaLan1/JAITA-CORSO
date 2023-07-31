@@ -1,0 +1,10 @@
+#form1, #form2 {
+    background-color: #dac4ed;
+    display: inline-block;
+    width: 30%; 
+    margin: 50px;
+    border: 1px solid #eeb6b6;
+    padding: 10px;
+    
+}
+

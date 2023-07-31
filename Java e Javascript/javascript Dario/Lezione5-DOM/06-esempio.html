@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+   
+    <div class="container">
+       
+        <h1>Lista Libri</h1>
+        
+        <ul id="listaLibri">
+            
+            <li>Dune</li>
+            <li>Harry Potter</li>
+            <li>Le mille e una notte</li>
+            <li>Il rosso e il nero</li>
+            <li>Il conte di Montecristo</li>
+        </ul>
+    </div>
+
+    <script>
+       //colore alternato 
+       //  let listaLibri = document.querySelectorAll("ul#listaLibri li");
+       // for (let i = 0; i < listaLibri.length; i++) {
+          //  if (i%2 == 0) {
+               // listaLibri[i].setAttribute("class","txtRed");
+           // }else{
+             //   listaLibri[i].setAttribute("class","txtBlue");
+           // }
+            
+       // }
+
+       /////////////////ALTERNATIVA CON IL FOREACH
+       document.addEventListener("DOMContentLoaded",function () {
+        let list = document.querySelectorAll("#coloredList li");
+
+        [...list].forEach((item,i) =>{
+
+            list.classList.add(i % 2 === 0? "even" : "odd"); //nelle tonde e' un operatore ternario
+        });
+
+       });
+    
+
+    </script>
+
+
+
+</body>
+</html>

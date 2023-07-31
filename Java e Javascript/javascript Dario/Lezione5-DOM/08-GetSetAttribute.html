@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="titolo">Vendita Piante e Fiori</h1>
+
+    <div>
+        <img id="imgPianta" class="imgRes">
+    </div>
+
+    <script>
+        //1: inserire la classe ad h1
+        let titolo = document.querySelector("#titolo");
+        // //non avendo una classe setto l'attributo da zero
+        titolo.setAttribute("class", "txtGreen");
+
+        // //2: inserire l'immagine
+        let imgPianta = document.querySelector("#imgPianta");
+        imgPianta.setAttribute("src", "piante.jpg");
+
+        //dato un array di immagine di piante, sostituire l'immagine ogni 3 secondi 
+        let immagini=new Array();
+	    immagini[0]="piante.jpg";
+	    immagini[1]="piantagrasse.jpg";
+        immagini[2]="camelia.jpg";
+        immagini[3]="piantbbb.jpg";
+
+        let num=0;
+        function CambiaImmagine() {
+
+        setInterval(()=>{
+
+        
+        imgPianta.setAttribute("src",immagini[num]);
+
+	    num=(num+1)%immagini.length;
+         },2000);
+        }
+        CambiaImmagine();
+
+
+        // 1. HasAttribute() verifica se esiste un'attributo, qualsiasi esso sia: class id href src.
+
+        
+    </script>
+</body>
+</html>

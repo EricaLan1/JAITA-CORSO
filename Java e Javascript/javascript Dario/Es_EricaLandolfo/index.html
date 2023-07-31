@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="titolo">Vendita Piante e Fiori</h1>
+
+    <div>
+        <img id="imgPianta" class="imgRes">
+    </div>
+
+    <script>
+        //1: inserire la classe ad h1
+        let titolo = document.querySelector("#titolo");
+        // //non avendo una classe setto l'attributo da zero
+        titolo.setAttribute("class", "txtGreen");
+
+        // //2: inserire l'immagine
+        let imgPianta = document.querySelector("#imgPianta");
+        imgPianta.setAttribute("src", "piante.jpg");
+
+        //dato un array di immagine di piante, sostituire l'immagine ogni 3 secondi 
+        let immagini=new Array();
+	    immagini[0]="piante.jpg";
+	    immagini[1]="piantagrasse.jpg";
+        immagini[2]="camelia.jpg";
+        immagini[3]="piantbbb.jpg";
+
+        let num=0;
+        function CambiaImmagine() {
+
+        setInterval(()=>{
+ 
+        imgPianta.setAttribute("src",immagini[num]);
+
+	    num=(num+1)%immagini.length; 
+        
+        /////ALTRO MODO
+        /**
+         * let piante = ["camelia","piante","piantbbb","piantegrasse"];
+         * let i-0; 
+         * 
+         * setInterval(()=>{
+         *  i++;  aggiornamento
+         * if(i == piante.lenght){   condizione
+         *  i=0;
+         * }
+         * 
+         * let path = "idirizzo imm"+piante[i]+ ".jpg";
+         * // let path = `./img/${piante[i]}.jpg`;
+         * imgPianta.setAttribute("src",path);
+         * },3000)
+         * /
+        
+        soluzione vecchia 
+        imgPiant.src = piante[i]
+
+        
+        // ciclo circolare parte da 0 e quando arriva all'ultima posizione dell'array ricomincia da capo, un ciclo infinito.
+        //L'obiettivo di questa espressione è di ottenere un ciclo circolare attraverso l'array delle immagini. Quando l'indice raggiunge l'ultimo elemento dell'array, l'operatore modulo lo riporta al primo elemento (indice 0), consentendo di continuare a ciclare attraverso l'array in modo circolare.
+
+        /**Il valore di "indiceImm" sarà ora 0, quindi stiamo tornando al primo elemento dell'array. Se l'espressione viene eseguita nuovamente, l'indice passerà da 0 a 1, poi a 2, e così via, fino a raggiungere nuovamente l'ultimo elemento dell'array, dopodiché tornerà al primo elemento e il ciclo continuerà.*/
+         },2000);
+        }
+        CambiaImmagine();
+
+        //// VERSIONE CORRETTA
+        //let classeDiH3 = document.querySelector("#titoloFondo").getAttribute("class");
+        // console.log(classeDiH3);
+    </script>
+</body>
+</html>

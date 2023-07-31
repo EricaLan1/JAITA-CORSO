@@ -1,0 +1,25 @@
+.alignLeft {
+    float:left;
+    /* float left aggancia l'immagine sulla destra*/
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+.alignRight {
+    float:right;
+     /*float right aggancia l'immagine sulla sinistra */
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.alignCenter{
+    display: block; /*forzo l'elemento come blocco */
+
+    /*con un elemento posso applicare i margini automatici */
+
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin:auto;
+    
+   /*NOTA non serve dare una larghezza perche' l'immagine ha gia' */
+   
+}

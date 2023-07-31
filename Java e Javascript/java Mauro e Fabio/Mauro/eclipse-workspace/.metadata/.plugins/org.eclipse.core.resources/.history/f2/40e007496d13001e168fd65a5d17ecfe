@@ -1,0 +1,21 @@
+package controlflow;
+
+public class stamparelafigura {
+
+	public static void main(String[] args) {
+	int asterisco= 6;
+	  for (int i = 0; i < 7; i--) {
+		  int i=6;
+		
+		 for (int r = 0; r < i ; i++) {
+		 
+			 System.out.println("*");
+			
+		}
+		  
+		 	System.out.println();
+	}
+
+	}
+
+}
