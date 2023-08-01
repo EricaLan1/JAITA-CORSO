@@ -1,5 +1,4 @@
 let demo = document.querySelector("#demo");
-let btn = document.querySelector("#btn");
 let formReg = document.querySelector("#formReg");
 
 let nomeUtente= document.querySelector("#nome");
