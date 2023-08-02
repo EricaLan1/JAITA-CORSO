@@ -1,6 +1,8 @@
 let conta2 = document.querySelector("#conta2");
 let textarea = document.querySelector("#textarea");
-
+let modulos = document.querySelector("#modulos");
+let btnInvio = document.querySelector("#btnInvio");
+let boxMessaggi = document.querySelector("#boxMessaggi");
 
 textarea.addEventListener("input", ContaCaratteri)
 
@@ -15,5 +17,16 @@ function ContaCaratteri(){
         alert("Caratteri massimi 280");
         
     }
-
+    
+    
 }
+
+btnInvio.addEventListener("click", function () {
+    let messaggioStampato = document.modulo.testo.value +" "+ new Date().toLocaleString(); //visto sugli esempi di mdn
+    
+    boxMessaggi.innerHTML += " "+messaggioStampato +"<br>";
+
+    document.modulo.testo.value = "";
+
+
+})

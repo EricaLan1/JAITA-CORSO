@@ -12,8 +12,6 @@ Deve essere presente una textarea (<textarea id="miaTxtArea"></textarea>). Sotto
 
 Sotto la textarea ci sarà un pulsante con invia messaggio. Al click il messaggio verrà stampato sotto nella pagina con la data e l'ora nel quale è stato inviato. Svuotare la textarea. All'inserimento di un nuovo messaggio comparirà al di sotto del primo.
 
-EXTRA 2: Creare un oggetto utente con le seguenti prop ( username, password, messaggi[{ testo: string, data: new Date()}], avatar: string ovvero il percorso dell'immagine utente )
-
-Quando stampo il messaggio con data e ora stampo anche il nome e l'avatar dell'utente
+EXTRA 2: Creare un oggetto utente con le seguenti prop ( username, password, messaggi[{ testo: string, data: new Date()}], avatar: string ovvero il percorso dell'immagine utente ). Quando stampo il messaggio con data e ora stampo anche il nome e l'avatar dell'utente
 
 
