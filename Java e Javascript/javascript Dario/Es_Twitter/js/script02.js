@@ -4,13 +4,12 @@ let modulos = document.querySelector("#modulos");
 let btnInvio = document.querySelector("#btnInvio");
 let boxMessaggi = document.querySelector("#boxMessaggi");
 
-textarea.addEventListener("input", ContaCaratteri)
 
 
 function ContaCaratteri(){
     let massimo = 280;
     let contatesto = massimo - document.modulo.testo.value.length;
-    conta2.textContent= "Caratteri rimanenti: "+ contatesto;
+    conta2.textContent  = "Caratteri rimanenti: "+ contatesto;
 
 
     if (contatesto <= 0 ) {
@@ -18,8 +17,9 @@ function ContaCaratteri(){
         
     }
     
-    
 }
+textarea.addEventListener("input", ContaCaratteri)
+
 
 btnInvio.addEventListener("click", function () {
     let messaggioStampato = document.modulo.testo.value +" "+ new Date().toLocaleString(); //visto sugli esempi di mdn
@@ -28,5 +28,5 @@ btnInvio.addEventListener("click", function () {
 
     document.modulo.testo.value = "";
 
-
 })
+
