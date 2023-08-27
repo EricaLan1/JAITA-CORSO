@@ -95,7 +95,7 @@
 //     link.appendChild(h3);
 
 //     let locandina = document.createElement("img");
-//     locandina.setAttribute("src", film.locandina);
+//     locandina.setAttribute("src", film.locandina); 
 //     locandina.setAttribute("alt", film.titolo + " locandina ");
 
 //     listaOggetti.innerHTML = "";
