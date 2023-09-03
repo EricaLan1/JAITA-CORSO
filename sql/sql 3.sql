@@ -1,21 +1,22 @@
-alter table libro drop foreign key fk_libro_editore; -- e un modo per eliminare la fk
+-- istruzioni di data manipulation language DML
+insert into studenti (cognome, email)
+values('fabiola','fabiolariccardi99@gmail.com');
 
-alter table libro
-add 
-constraint fk_libro_editore  -- questa riga e'opzionale
-foreign key(editore_id) references editore(id)
--- on delete cascade on update restrict; -- cancellami a cascata tutte le righe
-on delete set null on update set null;
+insert into studenti(cognome, email)
+values('riccati e di ceva e di san michele e di moncalieri eccc','bruni@gmail.com');
 
-show create table libro;
-select * from libro;
+insert into studenti (cognome, email)
+values('riccardi','riccardi@gmail.com'),
+('verdi','verdi@gmail.com'),
+('rossi','rossi@gmail.com');
 
--- on delete restrict -- no action e' la stessa cosa 
--- on update restrict 
-insert into libro (titolo, editore_id)
-values('guerra e pace',1000);
+insert into studenti (nome,cognome,genere,indirizzo,citta,provincia,regione,email,data_di_nascita)
+values('fabiola','riccardi','f','vico san giacomo 122','napoli','na','campania','fr@gmail.com','1999-02-16'),
+('franca','villa','f','via milano 25','milano','mi','lombardia','fv@gmail.com','2001-10-23');
 
-delete from editore where  id= 3; -- questa la blocca perche' nella tabella record di autore ci sono molti record con il valore di 1, e se cerco di cancellare questo record, l'id e' riferito per il campo editore id
+insert into studenti
+values(15,'mario','vecchio','m','via lombardia 25','bergamo','bg','lombardia','mvecchio@gmail.com','2001-09-10','2023-07-05 16:40:00');
 
-delete from editore;
+insert into studenti(email,cognome)
+values('osss@aruba.it','paperone');
 

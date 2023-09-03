@@ -31,3 +31,4 @@ delete from libro;
 delete from editore;
 
 select * from libro;
+select * from editore;

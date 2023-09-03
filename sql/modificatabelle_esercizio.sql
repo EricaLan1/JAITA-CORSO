@@ -107,7 +107,7 @@ stato varchar(50),
 capitale varchar(50),
 primary key (id)
 );
-libroshow create table africa;
+show create table africa;
 
 
 
