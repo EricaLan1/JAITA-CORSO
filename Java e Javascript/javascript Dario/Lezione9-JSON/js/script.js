@@ -6,6 +6,7 @@ let studente = {
     eta:23,
     id:2
 }
+console.log(studente);
 
 // traduco il mio obj in un JSON [javascript object Notation] ( notazione a stringa)
 // da questo momento in poi posso "inviare" questa stringa presso un endopoint di un'altra tecnologia
