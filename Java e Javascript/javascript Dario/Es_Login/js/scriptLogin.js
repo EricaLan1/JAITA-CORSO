@@ -1,44 +1,38 @@
 let formReg = document.querySelector("formReg");
-let utenteConnesso = localStorage.getItem("users");
+let utenteConnesso = localStorage.getItem("userRegistrati");
 let utente = JSON.parse(utenteConnesso);
 
-function checkSessione() {
-    let utenteConnesso = sessionStorage.getItem("users");
+// function checkSessione() {
+//     let utenteConnesso = sessionStorage.getItem("userRegistrati");
     
     
-    if (utenteConnesso != null) {
-        location.href = "./benvenuto.html";
-    }
-}
-document.addEventListener("DOMContentLoaded", checkSessione);
+//     if (utenteConnesso != null) {
+//         location.href = "./benvenuto.html";
+//     }
+// }
+// document.addEventListener("DOMContentLoaded", checkSessione);
 
 
-function Login() {
+function Login(event) {
     
     let nomeUtente = document.querySelector("#nome");
-    let password = document.querySelector("pass");
-    let cercaUtente = userRegistrati.find((element)=> element.nome == nomeUtente.value && element.pass == password.value ) !== undefined;
+    let password = document.querySelector("password");
+
+    let cercaUtente = utente.data.find((element)=> element.nome == nomeUtente.value && element.password == password.value ) !== undefined;
     console.log("Benvenut* "+ cercaUtente);
 
     if (cercaUtente) {
-    if (nomeUtente.value != "" && password.value !="") {
-        
-        let userJSON = JSON.getItem(userRegistrati);
+        sessionStorage.setItem("utente", JSON.stringify(cercaUtente))
+
+    }else{
+        alert ("Non hai inserito i dati necessari");
         event.preventDefault();
-
-    }else {
-            alert ("Non hai inserito i dati necessari");
-            event.preventDefault();
-            console.log(event);
+        console.log(event);
     }
 
-    
 
-    
-        
     }
 
-}
-formReg.addEventListener("submit", function(){
-    Login();
-});
+
+
+formReg.addEventListener("submit", Login);
