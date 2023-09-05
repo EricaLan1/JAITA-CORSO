@@ -1,4 +1,4 @@
-let formReg = document.querySelector("formReg");
+let formReg = document.querySelector("#formReg");
 let utenteConnesso = localStorage.getItem("userRegistrati");
 let utente = JSON.parse(utenteConnesso);
 
@@ -14,7 +14,7 @@ let utente = JSON.parse(utenteConnesso);
 
 
 function Login(event) {
-    event.preventDefault();
+    
     let nomeUtente = document.querySelector("#nome").value;
     let password = document.querySelector("#password").value;
 
@@ -26,7 +26,7 @@ function Login(event) {
 
     }else{
         alert ("Non hai inserito i dati necessari");
-       
+        event.preventDefault();
     }
 
 
