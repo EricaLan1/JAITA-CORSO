@@ -1,19 +1,19 @@
 let Ciao = document.querySelector("#salutaUser");
 
 function infoUser() {
-    let utenteConnesso = JSON.parse(localStorage.getItem("userRegistrati"));
-
+    let utenteConnesso = JSON.parse(sessionStorage.getItem("utente"));
+    console.log(utenteConnesso);
     if (utenteConnesso == null) {
         location.href = "./404.html";
     } else {
-        Ciao.innerHTML = `Ciao ${utenteConnesso.nome} <br> Email: ${utenteConnesso.mail}<br> id:  ${utenteConnesso.id}`;
+        Ciao.innerHTML = `Ciao ${utenteConnesso.nome} <br> Email: ${utenteConnesso.mail}<br>`;
     }
 }
 
 document.addEventListener("DOMContentLoaded", infoUser);
 
 function logout() {
-    localStorage.clear();
+    sessionStorage.clear();
     location.href = "./arrivederci.html";
 }
 

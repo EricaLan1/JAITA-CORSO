@@ -2,17 +2,6 @@ let formReg = document.querySelector("#formReg");
 let utenteConnesso = localStorage.getItem("userRegistrati");
 let utente = JSON.parse(utenteConnesso);
 
-// function checkSessione() {
-//     let utenteConnesso = sessionStorage.getItem("userRegistrati");
-    
-    
-//     if (utenteConnesso != null) {
-//         location.href = "./benvenuto.html";
-//     }
-// }
-// document.addEventListener("DOMContentLoaded", checkSessione);
-
-
 function Login(event) {
     
     let nomeUtente = document.querySelector("#nome").value;
