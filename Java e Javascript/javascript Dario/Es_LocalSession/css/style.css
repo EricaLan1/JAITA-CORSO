@@ -2326,7 +2326,9 @@ fieldset:disabled a.btn {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5); }
 
-.btn-outline-warning {
+
+      /* ATTENZIONE NON HAI COMPILATO */
+  .btn-outline-warning {
   color: #ffc107;
   border-color: #ffc107; }
   .btn-outline-warning:hover {

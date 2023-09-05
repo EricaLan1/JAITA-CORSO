@@ -14,3 +14,7 @@ L'utente dovrà essere un oggetto da salvare nella localStorage. All'arrivo sull
 I Form devono essere fatti con le classi di bootstrap. I campi dei form devono essere un po' più "ingrigliati".
 
 Griglia: container, col, row, ecc
+
+
+
+
