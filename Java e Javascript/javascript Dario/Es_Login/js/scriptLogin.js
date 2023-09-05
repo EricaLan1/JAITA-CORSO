@@ -14,20 +14,19 @@ let utente = JSON.parse(utenteConnesso);
 
 
 function Login(event) {
-    
-    let nomeUtente = document.querySelector("#nome");
-    let password = document.querySelector("password");
+    event.preventDefault();
+    let nomeUtente = document.querySelector("#nome").value;
+    let password = document.querySelector("#password").value;
 
-    let cercaUtente = utente.data.find((element)=> element.nome == nomeUtente.value && element.password == password.value ) !== undefined;
+    let cercaUtente = utente.data.find(cercaUtente => cercaUtente.nome == nomeUtente && cercaUtente.pass == password );
     console.log("Benvenut* "+ cercaUtente);
 
-    if (cercaUtente) {
+    if (cercaUtente !== undefined) {
         sessionStorage.setItem("utente", JSON.stringify(cercaUtente))
 
     }else{
         alert ("Non hai inserito i dati necessari");
-        event.preventDefault();
-        console.log(event);
+       
     }
 
 
