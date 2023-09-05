@@ -1,9 +1,9 @@
 let utente = {
-    nome: "Erica",
-    cognome: "Landolfo",
-    email: "ericalandolfo1@gmail.com",
-    username: "Thalitha",
-    Avatar: "https://upload.wikimedia.org/wikipedia/it/3/3e/Una_settimana_da_dio.png"
+    nome: "",
+    cognome: "",
+    email: "",
+    username: "",
+    Avatar: ""
 }
 
 
