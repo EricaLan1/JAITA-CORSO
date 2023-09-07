@@ -2,7 +2,7 @@ let Ciao = document.querySelector("#salutaUser");
 
 function infoUser() {
     let utenteConnesso = JSON.parse(sessionStorage.getItem("utente"));
-    console.log(utenteConnesso);
+    
     if (utenteConnesso == null) {
         location.href = "./404.html";
     } else {
