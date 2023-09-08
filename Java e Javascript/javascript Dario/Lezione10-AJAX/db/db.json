@@ -4,6 +4,51 @@
       "id": 1,
       "title": "json-server",
       "author": "typicode"
+    },
+    {
+      "title": "Java",
+      "author": "Mauro",
+      "id": 2
+    },
+    {
+      "title": "Java",
+      "author": "Mauro",
+      "id": 3
+    },
+    {
+      "title": "Java",
+      "author": "Mauro",
+      "id": 4
+    },
+    {
+      "title": "Java",
+      "author": "Mauro",
+      "id": 5
+    },
+    {
+      "title": "Java",
+      "author": "Mauro",
+      "id": 6
+    },
+    {
+      "title": "Java",
+      "author": "Mauro",
+      "id": 7
+    },
+    {
+      "title": "Java",
+      "author": "Mauro",
+      "id": 8
+    },
+    {
+      "title": "Java",
+      "author": "Mauro",
+      "id": 9
+    },
+    {
+      "title": "Java",
+      "author": "Mauro",
+      "id": 10
     }
   ],
   "comments": [
@@ -16,7 +61,7 @@
   "profile": {
     "name": "typicode"
   },
-  "autore":{
+  "autore": {
     "nome": "Erica",
     "cognome": "Landolfo",
     "anno": 2023
