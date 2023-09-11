@@ -1,11 +1,13 @@
 {
   "studenti": [
     {
+  
       "id": 1,
       "nome": "Fabiola",
       "cognome": "Riccardi"
     },
-    {
+    { 
+      
       "id": 2,
       "nome": "Mario",
       "cognome": "Cerciello"
@@ -24,27 +26,34 @@
       "nome": "Alfredo",
       "cognome": "Manfredi",
       "id": 5
-    }
-  ],
-  "docente":[
-    {
-        "id": 1,
-        "nome": "Dario Mennillo",
-        "materia": "Javascript",
-        "status": "online"
-      },
-    {
-        "id": 2,
-        "nome": "Milo Spandre",
-        "materia": "HTML & CSS",
-        "status": "online"
     },
     {
-        "id": 3,
-        "nome": "Mauro Bogliaccino",
-        "materia": "Java",
-        "status": "offline"
-      }
+      "nome": "Emilio ",
+      "cognome": "Scarpellino",
+      "id": 6
+    }
+  ],
+  "docente": [
+    { 
+      "imgDoc": "https://png.pngtree.com/png-vector/20190710/ourlarge/pngtree-user-vector-avatar-png-image_1541962.jpg",
+      "id": 1,
+      "nome": "Dario Mennillo",
+      "materia": "Javascript",
+      "status": "online"
+    },
+    { 
+      "imgDoc": "https://png.pngtree.com/png-vector/20200614/ourlarge/pngtree-businessman-user-avatar-character-vector-illustration-png-image_2242909.jpg",
+      "id": 2,
+      "nome": "Milo Spandre",
+      "materia": "HTML & CSS",
+      "status": "online"
+    },
+    {
+      "imgDoc": "https://cdn1.iconfinder.com/data/icons/avatar-men-1/512/Avatar-Men_avatar-man-bald-beard-512.png",
+      "id": 3,
+      "nome": "Mauro Bogliaccino",
+      "materia": "Java",
+      "status": "offline"
+    }
   ]
-
 }
