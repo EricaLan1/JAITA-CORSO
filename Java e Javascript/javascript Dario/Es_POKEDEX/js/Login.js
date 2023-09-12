@@ -1,7 +1,8 @@
 let formReg = document.querySelector("#formReg");
+let demo = document.querySelector("#demo");
 
 function Login(event) {
-    
+    demo.innerHTML = "";
     let nomeUtente = document.querySelector("#nome").value;
 
 
