@@ -16,5 +16,7 @@ function Login(event) {
 
 
 
-formReg.addEventListener("submit", Login);
+
 }
+
+formReg.addEventListener("submit", Login);
