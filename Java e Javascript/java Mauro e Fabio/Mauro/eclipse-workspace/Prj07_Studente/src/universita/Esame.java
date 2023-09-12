@@ -4,8 +4,8 @@ public class Esame {
 	private Studente studente;
 	private Materia materia;
 	private int voto;
+	
 	public Esame(Studente studente, Materia materia, int voto) {
-		super();
 		this.studente = studente;
 		this.materia = materia;
 		this.voto = voto;
@@ -32,7 +32,6 @@ public class Esame {
 	public String toString() {
 		return "Esame [studente=" + studente + ", materia=" + materia + ", voto=" + voto + "]";
 	}
-	
 	
 	
 }
