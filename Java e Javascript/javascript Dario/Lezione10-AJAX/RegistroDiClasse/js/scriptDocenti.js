@@ -13,6 +13,7 @@ fetch(URLDoc)
 .then(data =>{return data.json()})
 .then(response =>{
     console.log(response);
+    
     listaDocenti.innerHTML = "";
 
     response.forEach(docente => {
@@ -23,9 +24,6 @@ fetch(URLDoc)
         let info = document.createElement("p");
         let body = document.createElement("div");
         let column = document.createElement("div");
-        
-        
-        
        
         
         column.setAttribute("class", "col-4");

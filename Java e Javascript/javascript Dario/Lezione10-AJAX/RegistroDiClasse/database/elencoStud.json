@@ -1,21 +1,14 @@
 {
   "studenti": [
     {
-  
       "id": 1,
       "nome": "Fabiola",
       "cognome": "Riccardi"
     },
-    { 
-      
+    {
       "id": 2,
       "nome": "Mario",
       "cognome": "Cerciello"
-    },
-    {
-      "id": 3,
-      "nome": "Erica",
-      "cognome": "Landolfo"
     },
     {
       "nome": "Erica",
@@ -31,18 +24,23 @@
       "nome": "Emilio ",
       "cognome": "Scarpellino",
       "id": 6
+    },
+    {
+      "nome": "Anna",
+      "cognome": "Mazzone",
+      "id": 7
     }
   ],
   "docente": [
-    { 
-      "imgDoc": "https://png.pngtree.com/png-vector/20190710/ourlarge/pngtree-user-vector-avatar-png-image_1541962.jpg",
+    {
+      "imgDoc": "https://creazilla-store.fra1.digitaloceanspaces.com/icons/7913014/avatar-icon-sm.png",
       "id": 1,
       "nome": "Dario Mennillo",
       "materia": "Javascript",
       "status": "online"
     },
-    { 
-      "imgDoc": "https://png.pngtree.com/png-vector/20200614/ourlarge/pngtree-businessman-user-avatar-character-vector-illustration-png-image_2242909.jpg",
+    {
+      "imgDoc": "https://creazilla-store.fra1.digitaloceanspaces.com/icons/7912990/avatar-icon-md.png",
       "id": 2,
       "nome": "Milo Spandre",
       "materia": "HTML & CSS",
