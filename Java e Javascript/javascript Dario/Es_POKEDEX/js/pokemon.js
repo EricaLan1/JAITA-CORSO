@@ -36,7 +36,7 @@ let scelta = [];
 function pokemon(nome,url)
 {
 
-    if (scelta.length<6)
+    if (scelta.length<8)
     {
         scelta.push(nome,url)
         console.log(scelta);
@@ -44,7 +44,7 @@ function pokemon(nome,url)
     }
     else
     {
-        alert("Non puoi piÃ¹ aggiungere pokemon")
+        alert("Non puoi più aggiungere pokemon")
     }
 
 
@@ -55,7 +55,7 @@ btn.addEventListener("click",pokemon);
 //
 btn.addEventListener("click", () => {
     
-    if (scelta.length >= 3) {
+    if (scelta.length > 3) {
         
         localStorage.setItem("pokemonScelti", JSON.stringify(scelta));
 
@@ -64,3 +64,6 @@ btn.addEventListener("click", () => {
         alert("Devi selezionare almeno tre Pokémon.");
     }
 });
+
+
+//sdgsgsdgs
