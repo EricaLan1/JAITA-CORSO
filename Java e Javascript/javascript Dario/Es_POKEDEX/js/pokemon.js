@@ -51,3 +51,16 @@ function pokemon(nome,url)
 }
 
 btn.addEventListener("click",pokemon);
+
+//
+btn.addEventListener("click", () => {
+    
+    if (scelta.length >= 3) {
+        
+        localStorage.setItem("pokemonScelti", JSON.stringify(scelta));
+
+        window.location.href = "pokedex.html";
+    } else {
+        alert("Devi selezionare almeno tre Pokémon.");
+    }
+});
