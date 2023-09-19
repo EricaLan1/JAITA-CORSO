@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="normalize.css">
-    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ELEMENTI CHIAVE PER LA SEO: TITOLO E META DESCRIPTION -->
+    <title>Layout</title>
+    <meta name="description" content="Questa è una breve descrizione della pagina. Dovrebbe apparire nella pagina dei risultati di Google.">
+    <!-- la META DESCRIPTION dovrebbbe essere tra i 120 e i 160 caratteri -->
+
+
 </head>
 <body>
-    <header class="mainHeader container">
+   
+
+    <header id="mainHeader" class="mainHeader container">
 
         <div class="logo">
            <img src="logo-rosa.svg" alt="">
@@ -37,6 +53,12 @@
                 </li>
             </ul>
         </nav>
+
+        <button id="menuIcon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+        </button>
 
     </header>
 
@@ -102,6 +124,7 @@
         <section class="gallery container">
 
             <div class="galleryItem">
+
                 <img src="https://source.unsplash.com/400x400?ocean" alt="">
             </div>
 
@@ -136,12 +159,53 @@
            
         </section>
 
+
+        <section class="imgRandom container">
+
+
+            <figure>
+                <img src="https://source.unsplash.com/400x400?guitar" alt="guitar">
+
+                <figcaption>
+                    Una chitarra molto bella. 
+                </figcaption>
+            </figure>
+
+
+
+        </section>
+
     </main>
 
 
     <footer>
         © Corso JAITA93
     </footer>
-  
+
+
+    <script>
+
+        //JS FACILE FACILE PER IL MENU
+
+        //Intercetto il click sull'elemento
+
+        document.getElementById('menuIcon').addEventListener("click",addMenuClass);
+
+        //funzione che aggiunge la classe
+
+        function addMenuClass() {
+            var header = document.getElementById('mainHeader');
+            //a ogni click, attivo o disattivo la classe:
+            header.classList.toggle('is-mobile-open');
+
+            document.documentElement.classList.toggle('noscroll');
+
+
+
+
+        }
+
+    </script>
+
 </body>
 </html>
