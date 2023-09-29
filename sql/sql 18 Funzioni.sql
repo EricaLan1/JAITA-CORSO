@@ -115,3 +115,4 @@ order by `eta`;
 
 select cognome, data_di_nascita, dayofyear(data_di_nascita)
 from generation.studenti;
+

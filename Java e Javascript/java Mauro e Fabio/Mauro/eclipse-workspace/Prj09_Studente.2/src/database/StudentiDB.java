@@ -13,6 +13,10 @@ public class StudentiDB {
 	ArrayList<Studente> studenti = new ArrayList<>();
 	
 	public ArrayList<Studente> getStudenti() {
+		
+		//svuota l'arraylist
+		studenti.clear();
+		inizializza();
 		return studenti;
 	}
 

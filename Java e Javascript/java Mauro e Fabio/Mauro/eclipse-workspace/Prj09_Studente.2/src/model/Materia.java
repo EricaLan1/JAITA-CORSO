@@ -1,7 +1,7 @@
 package model;
 
 public class Materia {
-
+	
 	private int id;
 	private String nome;
 	
