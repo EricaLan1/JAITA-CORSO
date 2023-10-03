@@ -4,6 +4,7 @@ let btn = document.querySelector("#btn");
 let btn1 = document.querySelector("#btn1");
 let collezione = document.querySelector("#collezione");
 
+
 fetch(URL)
     .then(data => {
         return data.json();
@@ -41,9 +42,21 @@ function pokemon(nome, url) {
         scelta.push(nome, url)
         console.log(scelta);
 
+        let spazioAlert = document.querySelector("#spazioAlert");
+        
+        let alert = `
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>Scelgo te!</strong> Hai selezionato correttamente il tuo pokemon!
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>`;
+
+        spazioAlert.innerHTML = alert;
+
     } else {
         alert("Non puoi più aggiungere pokemon")
     }
+
+
 
 
 }
