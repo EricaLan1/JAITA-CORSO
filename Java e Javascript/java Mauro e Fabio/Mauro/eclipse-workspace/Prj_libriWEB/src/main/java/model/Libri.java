@@ -3,8 +3,8 @@ package model;
 public class Libri {
 	private int id;
 	private String titolo;
-	private double prezzo;
-	private int  pagine;
+	private String prezzo;
+	private String pagine;
 	
 	public int getId() {
 		return id;
@@ -18,16 +18,16 @@ public class Libri {
 	public void setTitolo(String titolo) {
 		this.titolo = titolo;
 	}
-	public double getPrezzo() {
+	public String getPrezzo() {
 		return prezzo;
 	}
-	public void setPrezzo(double prezzo) {
+	public void setPrezzo(String prezzo) {
 		this.prezzo = prezzo;
 	}
-	public int getPagine() {
+	public String getPagine() {
 		return pagine;
 	}
-	public void setPagine(int pagine) {
+	public void setPagine(String pagine) {
 		this.pagine = pagine;
 	}
 	@Override

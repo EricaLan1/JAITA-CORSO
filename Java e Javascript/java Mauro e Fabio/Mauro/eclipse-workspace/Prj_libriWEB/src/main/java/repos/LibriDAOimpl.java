@@ -24,8 +24,8 @@ public class LibriDAOimpl implements LibriDAO {
 			while (this.rs.next()) {
 				int id = rs.getInt(1);
 				String titolo = rs.getString("titolo");
-				double prezzo = rs.getDouble("prezzo");
-				int pagine = rs.getInt("pagine");
+				String prezzo = rs.getString("prezzo");
+				String pagine = rs.getString("pagine");
 				
 				Libri l = new Libri();
 				l.setId(id);
@@ -56,8 +56,8 @@ public class LibriDAOimpl implements LibriDAO {
 		try {
 			this.ps = this.db.getConnessione().prepareStatement(ADD);
 			this.ps.setString(1, l.getTitolo());
-			this.ps.setDouble(2, l.getPrezzo());
-			this.ps.setInt(3, l.getPagine());
+			this.ps.setString(2, l.getPrezzo());
+			this.ps.setString(3, l.getPagine());
 			this.ps.execute();
 			
 		} catch (SQLException e) {

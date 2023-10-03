@@ -140,7 +140,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="Prj08_HelloWeb" path="/Prj08_HelloWeb" reloadable="true" source="org.eclipse.jst.jee.server:Prj08_HelloWeb"/><Context docBase="PrjStudentWEB" path="/PrjStudentWEB" reloadable="true" source="org.eclipse.jst.jee.server:PrjStudentWEB"/><Context docBase="PrjCanzoniWeb" path="/Canzoni" reloadable="true" source="org.eclipse.jst.jee.server:PrjCanzoniWeb"/><Context docBase="Prj_libriWEB" path="/Prj_libriWEB" reloadable="true" source="org.eclipse.jst.jee.server:Prj_libriWEB"/></Host>
+      <Context docBase="Prj08_HelloWeb" path="/Prj08_HelloWeb" reloadable="true" source="org.eclipse.jst.jee.server:Prj08_HelloWeb"/><Context docBase="PrjStudentWEB" path="/PrjStudentWEB" reloadable="true" source="org.eclipse.jst.jee.server:PrjStudentWEB"/><Context docBase="PrjCanzoniWeb" path="/Canzoni" reloadable="true" source="org.eclipse.jst.jee.server:PrjCanzoniWeb"/><Context docBase="Prj_libriWEB" path="/Prj_libriWEB" reloadable="true" source="org.eclipse.jst.jee.server:Prj_libriWEB"/><Context docBase="PrjSerieTv" path="/SerieTv" reloadable="true" source="org.eclipse.jst.jee.server:PrjSerieTv"/></Host>
     </Engine>
   </Service>
 </Server>

@@ -25,8 +25,8 @@
 	  
 		  <tr>
 		    <td> <a target="_blank" href="https://www.google.com/search?q=<%= l.getTitolo() %>"><%= l.getTitolo() %></a> </td>
-		    <td><a target="_blank" href="https://www.google.com/search?q=<%= l.getPrezzo() %>"><%= l.getPrezzo() %></a></td>
-		    <td><a target="_blank" href="https://www.google.com/search?q=<%= l.getPagine() %>"><%= l.getPagine() %></a></td>
+		   	<td><%= l.getPrezzo() %></td>
+            <td><%= l.getPagine() %></td>
 		  </tr>
 	  
 	  <% } %>

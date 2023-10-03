@@ -1,4 +1,4 @@
-<%@page import ="presentation.GestioneEsami"%>
+<%@page import ="controller.GestioneEsami"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="model.Studente"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"

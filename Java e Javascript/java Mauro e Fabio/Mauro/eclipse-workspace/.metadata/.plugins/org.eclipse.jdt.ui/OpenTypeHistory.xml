@@ -2,4 +2,7 @@
 <typeInfoHistroy>
     <typeInfo handle="=PrjCanzoniWeb/src\/main\/java&lt;repos{CanzoneDAO.java[CanzoneDAO" modifiers="513" timestamp="1695884721595"/>
     <typeInfo handle="=Prj_libriWEB/src\/main\/java&lt;services{LibriService.java[LibriService" modifiers="513" timestamp="1695895697751"/>
+    <typeInfo handle="=PrjSerieTv/src\/main\/java&lt;repos{SerieDAO.java[SerieDAO" modifiers="513" timestamp="1695977253841"/>
+    <typeInfo handle="=hello-spring/C:\/Users\/Erica\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/3.1.4\/spring-data-jpa-3.1.4.jar=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.data=/=/maven.artifactId=/spring-data-jpa=/=/maven.version=/3.1.4=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;org.springframework.data.jpa.repository(JpaRepository.class[JpaRepository" modifiers="1537" timestamp="1696233930620"/>
+    <typeInfo handle="=hello-spring/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;it.erica.services{CanzoneService.java[CanzoneService" modifiers="513" timestamp="1696242371116"/>
 </typeInfoHistroy>
