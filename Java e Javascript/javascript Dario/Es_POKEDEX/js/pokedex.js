@@ -7,8 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let row = document.createElement("div");
     row.classList.add("row");
 
-    let btn1 = "btn";
-    let count = 1;
+  let status = this.getAttribute("data-numerocard");
 
 
     fetch(URL)
@@ -21,19 +20,19 @@ document.addEventListener("DOMContentLoaded", function () {
                         .then((data) => data.json())
                         .then((poke2) => {
                             let col = document.createElement("div");
-                            col.classList.add("col-md-4", "mb-3");
+                                col.classList.add("col-md-4", "mb-3");
                             let tipoPokemon= poke2.types[0].type.name;
-                            console.log(tipoPokemon);
+                                console.log(tipoPokemon);
                             let card = document.createElement("div");
-                            card.classList.add("card");
-                            card.innerHTML = `
-                                <img src="${poke2.sprites.front_default}" alt="${poke2.name}" class="card-img-top">
-                                <div class="card-body" data-numerocard = ` ${}`>
-                                    <h2 class="card-title name">${poke2.name}</h2>
-                                    <p class="card-title type"> ${tipoPokemon}</p>
-                                    <button class="btn btn-primary modificaBtn " id="btn" onclick="modificaUser(event)">Modifica info</button>
+                                card.classList.add("card");
+                                 card.innerHTML = `
+                                     <img src="${poke2.sprites.front_default}" alt="${poke2.name}" class="card-img-top">
+                                     <div class="card-body" data-numerocard = `${}`>
+                                         <h2 class="card-title name">${poke2.name}</h2>
+                                        <p class="card-title type"> ${tipoPokemon}</p>
+                                        <button class="btn btn-primary modificaBtn " id="btn" onclick="modificaUser(event)">Modifica info</button>
 
-                                </div>
+                                    </div>
                             `;
                             col.appendChild(card);
                             row.appendChild(col);
