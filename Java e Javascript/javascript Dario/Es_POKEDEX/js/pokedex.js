@@ -7,6 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
     let row = document.createElement("div");
     row.classList.add("row");
 
+    let btn1 = "btn";
+    let count = 1;
+
+
     fetch(URL)
         .then((data) => data.json())
         .then((response) => {
@@ -24,9 +28,11 @@ document.addEventListener("DOMContentLoaded", function () {
                             card.classList.add("card");
                             card.innerHTML = `
                                 <img src="${poke2.sprites.front_default}" alt="${poke2.name}" class="card-img-top">
-                                <div class="card-body">
-                                    <h2 class="card-title">${poke2.name}</h2>
-                                    <p> ${tipoPokemon}</p>
+                                <div class="card-body" data-numerocard = ` ${}`>
+                                    <h2 class="card-title name">${poke2.name}</h2>
+                                    <p class="card-title type"> ${tipoPokemon}</p>
+                                    <button class="btn btn-primary modificaBtn " id="btn" onclick="modificaUser(event)">Modifica info</button>
+
                                 </div>
                             `;
                             col.appendChild(card);
@@ -38,70 +44,27 @@ document.addEventListener("DOMContentLoaded", function () {
     cardContainer.appendChild(row);
 });
 
-//if (datiMemorizzati) {
-//let scelta = JSON.parse(datiMemorizzati);
-//console.log(scelta);
+function modificaUser(event){
+    event.preventDefault();
+    let divModifica = document.querySelector("#divModifica");
+    divModifica.classList.remove("d-none");
 
-//let cardContainer = document.querySelector("#Pokedex");
+        let nome = document.querySelector("#nome").value
+        let tipo = document.querySelector("#tipo").value
+      
+        document.querySelector(`.card-title.name`).innerText = nome;
+        document.querySelector(`.card-title.type`).innerText = tipo;
+}
 
-// Creare una riga Bootstrap
-//let row = document.createElement("div");
-//row.classList.add("row");
-
-//for (let i = 0; i < scelta.length; i += 2) {
-//let nome = scelta[i];
-
-
-
-// Creare una colonna Bootstrap per ogni card
-//let col = document.createElement("div");
-//col.classList.add("col-md-4", "mb-3");
-
-// Creare la card all'interno della colonna
-//let card = document.createElement("div");
-//card.classList.add("card");
+formModifica.addEventListener("submit", modificaUser);
 
 
 
-//fetch("https://pokeapi.co/api/v2/pokemon/?limit=20&offset=0")
-//.then(data => data.json())
-//.then(pokemon => {
-//pokemon.results.forEach(pokemonT => {
-//let trovato = scelta.find((poke2) => pokemonT.name === poke2);
-//if (trovato) {
-//fetch(pokemon.url)
-//.then(data => data.json())
-//.then(poke2 =>{
-//card.innerHTML = `
-//<img src="${poke2.sprites.front_default}" alt="${poke2.name}" class="card-img-top">
-//<div class="card-body">
-//<h2 class="card-title">${poke2.name}</h2>
-//</div>
-// `;
-//})
-// }
+function annullaModifiche(){
+    let divModifica = document.querySelector("#divModifica");
+    divModifica.classList.add("d-none");
+}
 
-//});
+let btnAnnulla = document.querySelector("#btnAnnulla");
 
-
-// let imageUrl = pokemon.sprites.other["official-artwork"].front_default;
-// card.innerHTML = `
-//     <img src="${imageUrl}" alt="${nome}" class="card-img-top">
-//     <div class="card-body">
-//         <h2 class="card-title">${nome}</h2>
-//     </div>
-// `;
-
-// Aggiungere la card alla colonna
-//col.appendChild(card);
-//})
-// .catch(error => console.error(error));
-
-// Aggiungere la colonna alla riga
-// row.appendChild(col);
-//}
-
-// Aggiungere la riga con tutte le colonne al contenitore
-// cardContainer.appendChild(row);
-// }
-//});
+btnAnnulla.addEventListener("click", annullaModifiche);
