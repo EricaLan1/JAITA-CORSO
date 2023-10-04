@@ -6,7 +6,7 @@ let osm = new L.TileLayer(url, {minZoom: 8, maxZoom: 16, attribution: attrib});
 map.setView(new L.LatLng(41.88,12.47),16);
 map.addLayer(osm);
 
-L.marker([41.88,12.47]).addTo(map).bindPopup("I’m here!").openPopup();
+
 let pokemonIcon = L.icon({
     
     iconUrl: './img/pokemongeo.svg',
