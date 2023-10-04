@@ -2,15 +2,19 @@ package it.erica.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-
 
 @Controller
 public class MioController {
-	
-	@GetMapping("homepage")
-	//@ResponseBody
+
+	@GetMapping({"home", "index", "casa"})
 	public String home() {
-		return "clientcanzoni";
+		return "home";
 	}
+	
+	@GetMapping("clientCanzoni")
+	public String client() {
+		return "client";
+	}
+	
+	
 }

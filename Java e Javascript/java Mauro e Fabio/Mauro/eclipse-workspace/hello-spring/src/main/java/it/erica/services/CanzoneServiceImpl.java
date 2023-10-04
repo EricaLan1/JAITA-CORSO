@@ -10,25 +10,27 @@ import it.erica.repos.CanzoneDAO;
 
 @Service
 public class CanzoneServiceImpl implements CanzoneService {
-	
-	@Autowired //Collegamento automatico all'oggetto 
+
+	@Autowired
 	CanzoneDAO dao;
 	
+	
 	@Override
-	public List<Canzone> getCanzone() {
-		// TODO Auto-generated method stub
+	public List<Canzone> getCanzoni() {
+		
 		return dao.findAll();
 	}
 
 	@Override
 	public Canzone addCanzone(Canzone c) {
-		// TODO Auto-generated method stub
+		
 		return dao.save(c);
 	}
-	
+
 	@Override
-	public Canzone updateCanzone (Canzone c) {
+	public Canzone updateCanzone(Canzone c) {
 		// TODO Auto-generated method stub
 		return dao.save(c);
 	}
+
 }

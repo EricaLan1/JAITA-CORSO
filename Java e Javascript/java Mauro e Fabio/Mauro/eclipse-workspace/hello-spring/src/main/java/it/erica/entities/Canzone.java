@@ -9,14 +9,16 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name="canzoni")
 public class Canzone {
-	
+
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)//la chiave primaria la genera il database
 	private int id;
+	
 	private String titolo;
 	private String cantante;
 	private String genere;
 	private int anno;
+	
 	
 	public int getId() {
 		return id;
@@ -48,5 +50,6 @@ public class Canzone {
 	public void setAnno(int anno) {
 		this.anno = anno;
 	}
+	
 	
 }
