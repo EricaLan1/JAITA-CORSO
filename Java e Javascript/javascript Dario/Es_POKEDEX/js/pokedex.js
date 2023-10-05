@@ -20,10 +20,16 @@ document.addEventListener("DOMContentLoaded", function () {
                     fetch(pokemonT.url)
                         .then((data) => data.json())
                         .then((poke2) => {
+                            fetch(poke2.species.url)
+                            .then((data) => data.json())
+                            .then((poke3) => {
+                            let trovato_3 = poke3.flavor_text_entries.find(it => it.language.name == "it"); 
                             let col = document.createElement("div");
                             col.classList.add("col-md-8", "mb-3");
                             let tipoPokemon= poke2.types[0].type.name;
-                            console.log(tipoPokemon);
+                            let descrizionePokemon = trovato_3?trovato_3.flavor_text: "error"; // operatore ternario sostitutivo di if. if trovato 3 , se e' pieno prendo la descrizione dell'indice, mettimi la descrizione pokemon se no errore
+                                
+                            console.log(descrizionePokemon);
                             let card = document.createElement("div");
                             card.classList.add("card");
                             card.setAttribute("data-numeroCard", numeroCard);
@@ -32,11 +38,13 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <div class="card-body">
                                     <h2 class="card-title name">${poke2.name}</h2>
                                     <p class="card-title type"> ${tipoPokemon}</p>
+                                    <p class="card-title type descrizioneP"> ${descrizionePokemon}</p>
                                     <button class="btn btn-primary modificaBtn " id="btn" onclick="modificaPokemon(`+ numeroCard++ +`)">Modifica info</button>
                                 </div>
                             `;
                             col.appendChild(card);
                             row.appendChild(col);
+                            })
                         });
 
                 }
@@ -53,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let inputNumero= document.querySelector("#numeroCard");
         document.querySelector("#tipo").value = "";
         document.querySelector("#nome").value = "";
-
+        document.querySelector("#descrizione").value ="";
         
         inputNumero.value = numero;
     }
@@ -63,6 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault();
         let tipo = document.querySelector("#tipo").value;
         let nome = document.querySelector("#nome").value;
+        let descrizione = document.querySelector("#descrizione").value;
         let numeroCard = document.querySelector("#numeroCard").value;
 
         let listaCards= document.querySelectorAll(".card");
@@ -73,6 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (numero === numeroCard) {
                 card.querySelector("h2").innerHTML = nome;
                 card.querySelector("p").innerHTML = tipo;
+                card.querySelector(".descrizioneP").innerHTML = descrizione;
                 console.log("trovato");
             }
 
