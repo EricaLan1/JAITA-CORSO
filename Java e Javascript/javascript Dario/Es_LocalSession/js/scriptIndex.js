@@ -8,17 +8,6 @@ function User(nome, cognome, email, username, avatar){
     this.avatar = avatar
 }
 
-function checkSessione() {
-    let utenteConnesso = localStorage.getItem("user");
-
-    if (utenteConnesso != null) {
-        location.href = "./benvenuto.html";
-    }else{
-        
-    }
-}
-
-
 function registrati(){
     
     let nome = document.querySelector("#nome");

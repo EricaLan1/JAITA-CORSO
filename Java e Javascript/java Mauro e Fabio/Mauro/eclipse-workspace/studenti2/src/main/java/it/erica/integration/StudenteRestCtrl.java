@@ -9,23 +9,49 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import it.erica.entities.Corso;
+import it.erica.entities.Esame;
 import it.boglia.entities.Studente;
+import it.erica.services.CorsoService;
+import it.erica.services.EsameService;
 import it.erica.services.StudenteService;
 
 @RestController
-@RequestMapping
+@RequestMapping("api")
 public class StudenteRestCtrl {
-	
+
 	@Autowired
 	StudenteService service;
+
+	@Autowired
+	EsameService esameService;
+	
+	@Autowired
+	CorsoService corsoService;
 	
 	@GetMapping("studenti")
 	List<Studente> getStudenti(){
-		return service.getStudenti()
+		return service.getStudenti();
+	}
+	
+	@GetMapping("esami")
+	List<Esame> getEsami(){
+		return esameService.getEsami();
+	}
+	
+	@PostMapping("esami")
+	Esame addEsami(@RequestBody Esame e){
+		return esameService.addEsame(e);
+	}	
+	
+	@GetMapping("corsi")
+	List<Corso> getCorsi(){
+		return corsoService.getCorsi();
 	}
 	
 	@PostMapping("studenti")
-	Studente addStudente(@RequestBody Studente s) {
+	Studente addStudente(@RequestBody  Studente s) {
 		return service.addStudente(s);
 	}
+	
 }

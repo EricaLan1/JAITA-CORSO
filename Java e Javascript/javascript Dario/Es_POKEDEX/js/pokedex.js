@@ -7,9 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
     let row = document.createElement("div");
     row.classList.add("row");
 
-  let status = this.getAttribute("data-numerocard");
-
-
+    
+  //let status = this.getAttribute("data-numerocard");
+  //data-numerocard = `${}`
+    let numeroCard = 0;
     fetch(URL)
         .then((data) => data.json())
         .then((response) => {
@@ -20,50 +21,79 @@ document.addEventListener("DOMContentLoaded", function () {
                         .then((data) => data.json())
                         .then((poke2) => {
                             let col = document.createElement("div");
-                                col.classList.add("col-md-4", "mb-3");
+                            col.classList.add("col-md-8", "mb-3");
                             let tipoPokemon= poke2.types[0].type.name;
-                                console.log(tipoPokemon);
+                            console.log(tipoPokemon);
                             let card = document.createElement("div");
-                                card.classList.add("card");
-                                 card.innerHTML = `
-                                     <img src="${poke2.sprites.front_default}" alt="${poke2.name}" class="card-img-top">
-                                     <div class="card-body" data-numerocard = `${}`>
-                                         <h2 class="card-title name">${poke2.name}</h2>
-                                        <p class="card-title type"> ${tipoPokemon}</p>
-                                        <button class="btn btn-primary modificaBtn " id="btn" onclick="modificaUser(event)">Modifica info</button>
-
-                                    </div>
+                            card.classList.add("card");
+                            card.setAttribute("data-numeroCard", numeroCard);
+                            card.innerHTML = `
+                                <img src="${poke2.sprites.front_default}" alt="${poke2.name}" class="card-img-top">
+                                <div class="card-body">
+                                    <h2 class="card-title name">${poke2.name}</h2>
+                                    <p class="card-title type"> ${tipoPokemon}</p>
+                                    <button class="btn btn-primary modificaBtn " id="btn" onclick="modificaPokemon(`+ numeroCard++ +`)">Modifica info</button>
+                                </div>
                             `;
                             col.appendChild(card);
                             row.appendChild(col);
                         });
+
                 }
             });
         });
     cardContainer.appendChild(row);
 });
 
-function modificaUser(event){
-    event.preventDefault();
-    let divModifica = document.querySelector("#divModifica");
-    divModifica.classList.remove("d-none");
+    function modificaPokemon(numero){
+        
+        let divModifica = document.querySelector("#divModifica");
+        divModifica.classList.remove("d-none");
+        console.log(numero);
+        let inputNumero= document.querySelector("#numeroCard");
+        document.querySelector("#tipo").value = "";
+        document.querySelector("#nome").value = "";
 
-        let nome = document.querySelector("#nome").value
-        let tipo = document.querySelector("#tipo").value
-      
-        document.querySelector(`.card-title.name`).innerText = nome;
-        document.querySelector(`.card-title.type`).innerText = tipo;
-}
-
-formModifica.addEventListener("submit", modificaUser);
-
+        
+        inputNumero.value = numero;
+    }
 
 
-function annullaModifiche(){
-    let divModifica = document.querySelector("#divModifica");
-    divModifica.classList.add("d-none");
-}
+    function salvaPokemon(event) {
+        event.preventDefault();
+        let tipo = document.querySelector("#tipo").value;
+        let nome = document.querySelector("#nome").value;
+        let numeroCard = document.querySelector("#numeroCard").value;
 
-let btnAnnulla = document.querySelector("#btnAnnulla");
+        let listaCards= document.querySelectorAll(".card");
+        listaCards.forEach(card => {
+           let numero = card.getAttribute("data-numeroCard");
+          
 
-btnAnnulla.addEventListener("click", annullaModifiche);
+            if (numero === numeroCard) {
+                card.querySelector("h2").innerHTML = nome;
+                card.querySelector("p").innerHTML = tipo;
+                console.log("trovato");
+            }
+
+        });
+        console.log(listaCards);
+        let divModifica = document.querySelector("#divModifica");
+        divModifica.classList.add("d-none");
+
+        
+    }
+    formModifica.addEventListener("submit", salvaPokemon);
+
+
+
+    function annullaModifiche(){
+
+        let divModifica = document.querySelector("#divModifica");
+        divModifica.classList.add("d-none");
+
+    }
+
+    let btnAnnulla = document.querySelector("#btnAnnulla");
+
+    btnAnnulla.addEventListener("click", annullaModifiche);
