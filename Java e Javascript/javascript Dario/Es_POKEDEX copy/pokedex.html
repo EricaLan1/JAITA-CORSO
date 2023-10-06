@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Pokedex</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.3 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+  <header>
+    <h1>pokedex</h1>
+  </header>
+  <main>
+
+
+
+    <section class="row-cols-sm-2" my-5>
+
+      <section class="row-cols-sm-2" my-5>
+
+        <div class="cardContainer">
+          <h4>Pokemon Selezionati</h2>
+  
+            <div class=" row" id="Pokedex">
+              
+  
+  
+            </div>
+        </div>
+  
+        <div class="col-6 d-none" id="divModifica">
+          <form id="formModifica">
+        
+            <div class="mb-3">
+              <label for="" class="form-label">Nome</label>
+              <input type="text"
+              class="form-control" name="nome" id="nome" aria-describedby="helpId">
+            </div>
+    
+      
+           
+           
+            <div class="mb-3">
+              <label for="" class="form-label">Tipo</label>
+              <input type="text"
+                class="form-control" name="tipo" id="tipo" aria-describedby="helpId">
+            </div>
+
+            <div class="mb-3">
+              <label for="" class="form-label">Descrizione</label>
+              <input type="text"
+                class="form-control" name="descrizione" id="descrizione" aria-describedby="helpId">
+            </div>
+
+            <input type="hidden" id="numeroCard">
+            
+            <button class="btn btn-primary" type="submit" id="btnSalvaModifiche">Salva</button>
+            <button class="btn btn-danger" id="btnAnnulla" type="button">Annulla Modifica</button>
+          </form>
+        </div>
+    
+      </div>
+
+      
+  
+  
+  
+  
+        </div>
+  
+        </div>
+  
+        </div>
+    </section>
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+
+  <script type="text/javascript" src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="./js/pokedex.js"></script>
+
+
+</body>
+
+</html>
