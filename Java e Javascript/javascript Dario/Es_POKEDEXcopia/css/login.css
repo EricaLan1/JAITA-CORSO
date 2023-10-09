@@ -1,0 +1,58 @@
+body{
+    background-color: #7a1d1d;
+    background-image: url(/Es_POKEDEXcopia/img/sfondopokemontrasparente.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    
+    background-position: 66%;
+    background-size:20%
+    
+    
+    
+    
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+}
+
+.bottone{
+    height: 5rem;
+    position: relative;
+    bottom: 3rem;
+    left: 50%;
+}
+
+/* .card{
+    
+    
+    left: 40%;
+    top:15%;
+    height: 400px;
+} */
+.navbar{
+    
+    background-color: #7a1d1d;
+    box-shadow: 5px 10px 40px #000000;
+    
+}
+
+.page-footer{
+    border-top: 10px solid #000;
+    
+    
+}
+
+h5, p, li {
+    color: #000;
+}

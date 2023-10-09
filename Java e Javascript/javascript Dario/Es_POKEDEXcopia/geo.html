@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps</title>
+
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+    <link rel="stylesheet" href="./css/mappa.css">
+</head>
+<body>
+    
+
+<div class="map-wrap">
+    <div id="map"></div>
+</div>
+
+<input type="text" id="addressInput" placeholder="Inserisci un indirizzo">
+    <button onclick="moveToAddress()">Vai all'indirizzo</button>
+
+    <div id="weather-info"></div>
+
+
+
+
+    <script type="text/javascript" src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js">
+    </script>
+
+    <script src="./js/geo.js"></script>
+</body>
+</html>

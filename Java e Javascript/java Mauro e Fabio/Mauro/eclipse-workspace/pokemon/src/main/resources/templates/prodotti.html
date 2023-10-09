@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+    <table id="tabella">
+        <tr>
+            <th>Id</th>
+            <th>Descrizione</th>
+            <th>Disponibilita</th>
+            <th>Prezzo</th>
+            <th>Tipo</th>
+        </tr>
+    </table>
+    
+    <h1>Aggiungi prodotto</h1>
+
+        <input type="text" placeholder="Aggiungi Descrizione" id="descrizione"><br>
+        <input type="text" placeholder="Aggiungi Disponibilita" id="disponibilita"> <br>
+        <input type="text" placeholder="Aggiungi Prezzo" id="prezzo"><br>
+        <input type="text" placeholder="Aggiungi tipo" id="tipo"><br>
+
+
+
+    <script>
+        let campoTitolo = document.querySelector("#titolo");
+        let campoDisponiblita = document.querySelector("#disponibilita")
+        let campoPrezzo = document.querySelector("#prezzo")
+        let campoTipo = document.querySelector("#tipo")
+        let btnAdd = document.querySelector("#btnAdd")
+
+        btnAdd.onclick = function () {
+            let prodotto = {
+                descrizione: campoDescrizione.value,
+                disponiblita: campoDisponiblita.value,
+                prezzo: campoPrezzo,
+                tipo: campoTipo. value,
+            }
+
+            fetch(URL, {
+                method: 'post',
+                body: JSON.stringify(prodotto),
+                headers: {
+                    "Content-Type": "application/json",
+                },
+
+                
+            })
+            .then(res => res.json)
+            .then(res=>{ console.log('record inserito',res);})
+        }
+
+        let URL= "http://localhost:9003/api/prodotti";
+        let TABELLA = document.querySelector("#tabella");
+        fetch(URL)
+            .then(res => res.json())
+            .then(res =>{
+
+                for(const prodotto of res){
+                    const TR = document.createElement('tr')
+                    const TD1 = document.createElement('td')
+                    TD1.textContent = prodotto.id
+                    const TD2 = document.createElement('td')
+                    TD2.textContent = prodotto.descrizione
+                    const TD3 = document.createElement('td')
+                    TD3.textContent = prodotto.disponibilita
+                    const TD4 = document.createElement('td')
+                    TD4.textContent = prodotto.prezzo
+                    const TD5 = document.createElement('td')
+                    TD5.textContent = prodotto.tipo
+
+                    TR.append(TD1,TD2,TD3,TD4,TD5)
+
+                    TABELLA.append(TR)
+                }
+            })
+            
+    </script>
+
+
+
+</body>
+</html>
