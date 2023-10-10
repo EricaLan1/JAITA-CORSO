@@ -6,18 +6,25 @@ let collezione = document.querySelector("#collezione");
 let pokedex = [];
 
 // Funzione per creare una card per un Pokémon
+// function cartaPokemon(pokemon) {
+//     let card = document.createElement("div");
+//     card.classList.add("col-md-4", "mb-3");
+//     card.innerHTML = `
+//         <div class="card">
+//             <div class="card-body">
+//                 <h5 class="card-title">${pokemon.name}</h5>
+//                 <button type="button" class="btn btn-primary bottoneAggiungi">Aggiungi al Pokedex</button>
+//             </div>
+//         </div>
+//     `;
 function cartaPokemon(pokemon) {
-    let card = document.createElement("div");
-    card.classList.add("col-md-4", "mb-3");
-    card.innerHTML = `
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">${pokemon.name}</h5>
-                <button type="button" class="btn btn-primary bottoneAggiungi">Aggiungi al Pokedex</button>
-            </div>
-        </div>
+    let cardUl = document.querySelector(".list-group-flush")
+    cardUl.innerHTML = `
+        <li class="list-group-item">${pokemon.name}<button type="button" class="btn btn-primary bottoneAggiungi">Aggiungi al Pokedex</button></li>
     `;
 
+    
+        
     // Aggiungi l'event listener per il clic sul pulsante "Aggiungi al Pokedex"
     let addButton = card.querySelector(".bottoneAggiungi");
     addButton.addEventListener("click", () => {
