@@ -12,7 +12,7 @@ function cartaPokemon(pokemon) {
     let card= document.createElement("li");
             card.classList.add("list-group-item");
             card.innerHTML = `
-                <img src= >
+                <img src="" >
                 <h6>${pokemon.name}</h6>
                 <button type="button" class="btn btn-primary bottoneAggiungi">Aggiungi al Pokedex</button>
             `;
@@ -78,10 +78,6 @@ function listaPokemon() {
             response.results.forEach((pokemon) => {
                 fetch(pokemon.url)
                     .then((data) => {
-                        fetch(poke2.species.url)
-                        .then((data) => data.json())
-                        .then((poke3) => {
-                        let animationPokemon = poke3.generation-v_black-white_animated_front_default;
                         return data.json();
                     })
                     .then((response) => {
