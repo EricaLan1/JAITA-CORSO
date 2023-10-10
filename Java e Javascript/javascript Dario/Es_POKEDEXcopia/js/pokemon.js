@@ -8,13 +8,13 @@ let stampaGruppi = document.querySelector("#lista");
 
 
 function cartaPokemon(pokemon) {  //creaiamo
-    
+    let animatedImageURL = pokemon.sprites.versions['generation-v']['black-white'].animated.front_default;
     let card= document.createElement("li");
             card.classList.add("list-group-item");
             card.innerHTML = `
-                <img src= >
+                <img src= "${animatedImageURL}">
                 <span>${pokemon.name}</span>
-                <button type="button" class="btn btn-primary bottoneAggiungi d-inline-block">Aggiungi al Pokedex</button>
+                <button type="button" class="btn btn-danger bottoneAggiungi d-inline-block ms-5 float-end">Aggiungi al Pokedex</button>
             `;
 
     
@@ -33,7 +33,7 @@ function cartaPokemon(pokemon) {  //creaiamo
 
         let alert = `
         <div class="alert alert-danger alert-dismissible fade show" role="alert">
-            <strong>Scelgo!</strong> Hai selezionato correttamente il tuo pokemon!
+            <strong>Scelgo te ${pokemon.name}!</strong> Hai selezionato correttamente il tuo pokemon!
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>`;
 
@@ -51,7 +51,7 @@ function cartaPokemon(pokemon) {  //creaiamo
             if (pokedex.length >= 3) {
                 let alert = `
             <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                <strong>hai scelto correttamente i tre pokemon</strong>
+                <strong>hai selezionato correttamente i tre pokemon, </strong>procedi nel pokedex per la visualizzazione
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>`;
     

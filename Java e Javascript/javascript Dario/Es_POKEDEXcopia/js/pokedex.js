@@ -7,13 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
     let row = document.createElement("div");
     row.classList.add("row");
     
-
-    //geocalizzazione
-   
-
-    
-  //let status = this.getAttribute("data-numerocard");
-  //data-numerocard = `${}`
     let numeroCard = 0;
     fetch(URL)
         .then((data) => data.json())
@@ -24,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     fetch(pokemonT.url)
                         .then((data) => data.json())
                         .then((poke2) => {
-                            fetch(poke2.species.url)
+                            fetch(poke2.species.url) // si prende la descrizione 
                             .then((data) => data.json())
                             .then((poke3) => {
                             let trovato_3 = poke3.flavor_text_entries.find(it => it.language.name == "it"); 
@@ -38,13 +31,8 @@ document.addEventListener("DOMContentLoaded", function () {
                             card.classList.add("card");
                             card.setAttribute("data-numeroCard", numeroCard);
                             card.innerHTML = `
-                                <img src="${poke2.sprites.front_default}" alt="${poke2.name}" class="card-img-top">
-                                <div class="card-body">
-                                    <h2 class="card-title name">${poke2.name}</h2>
-                                    <p class="card-title type"> ${tipoPokemon}</p>
-                                    <p class="card-title type descrizioneP"> ${descrizionePokemon}</p>
-                                    <button class="btn btn-primary modificaBtn " id="btn" onclick="modificaPokemon (${numeroCard})">Modifica</button>
-                                    <form action="./geo.html?numeroCard=${numeroCard}" target="_blank"><button class="btn btn-primary modificaBtn">Geolocalizzazione</button></form>
+                                
+                                
                                     
                                     
                             `;
@@ -65,7 +53,6 @@ document.addEventListener("DOMContentLoaded", function () {
         
         let divModifica = document.querySelector("#divModifica");
         divModifica.classList.remove("d-none");
-        console.log(numero);
         let inputNumero= document.querySelector("#numeroCard");
         document.querySelector("#tipo").value = "";
         document.querySelector("#nome").value = "";
