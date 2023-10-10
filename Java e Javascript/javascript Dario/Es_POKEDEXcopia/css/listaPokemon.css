@@ -1,0 +1,14 @@
+.bottone{
+    height: 5rem;
+    position: relative;
+    bottom: 3rem;
+    left: 50%;
+}
+
+h5, p, li {
+    color: #000;
+}
+
+.list-group{
+    background-color: white;
+}

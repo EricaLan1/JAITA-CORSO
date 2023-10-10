@@ -2,17 +2,10 @@ body{
     background-color: #7a1d1d;
     background-image: url(/Es_POKEDEXcopia/img/sfondopokemontrasparente.png), url(/Es_POKEDEXcopia/img/trainerf2.png);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    
+    background-position: 75% 10rem , 30% 10rem;
+    background-size:15%, 13%;
 
-    background-attachment: fixed;
-    background-position: 66%, 26%;
-    
-    background-size:20%, 16%;
-
-    
-    
-    
-    
 }
 
 
@@ -26,7 +19,9 @@ body{
  .card{
     
     left: 40%;
-    height: 30rem;
+    height: auto;
+     /*setting alpha = 0.3*/
+     background: rgba(124, 103, 103, 0.438);
 } 
 .navbar{
     
@@ -42,3 +37,4 @@ body{
 h5, p, li {
     color: #000;
 }
+
