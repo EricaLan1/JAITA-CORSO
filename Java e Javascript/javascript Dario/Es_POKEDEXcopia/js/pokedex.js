@@ -32,7 +32,13 @@ document.addEventListener("DOMContentLoaded", function () {
                             card.setAttribute("data-numeroCard", numeroCard);
                             card.innerHTML = `
                                 
-                                
+                            <img src="${poke2.sprites.front_default}" alt="${poke2.name}" class="card-img-top">
+                            <div class="card-body">
+                                <h2 class="card-title name">${poke2.name}</h2>
+                                <p class="card-title type"> ${tipoPokemon}</p>
+                                <p class="card-title type descrizioneP"> ${descrizionePokemon}</p>
+                                <button class="btn btn-primary modificaBtn " id="btn" onclick="modificaPokemon (${numeroCard})">Modifica</button>
+                                <form action="./geo.html?numeroCard=${numeroCard}" target="_blank"><button class="btn btn-primary modificaBtn">Geolocalizzazione</button></form>
                                     
                                     
                             `;
