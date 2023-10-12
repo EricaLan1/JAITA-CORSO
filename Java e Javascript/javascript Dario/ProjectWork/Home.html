@@ -54,36 +54,40 @@
 
 
       <div class="Hero">
-      <div class="swiper  vh-100">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide position-relative text-center">
-            <img class=" vh-100 min-vw-100"  src="./img/Interstellar.jpg" alt="">
+      <div class="swiper  vh-100 ">
+        <div class="swiper-wrapper  ">
+          <div class="swiper-slide position-relative" style="background-image: url(./img/Interstellar.jpg);">
+            <!-- <img class=" vh-100 min-vw-100"  src="./img/Interstellar.jpg" alt=""> -->
             <div class="overlay">
-                <div class="slideText position-absolute top-50 start-50 translate-middle text-center mt-2 text-white">
-                    <h2 class="fw-bold">Lorem ipsum dolor, sit amet.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio accusamus sint adipisci vero, beatae reprehenderit quos!</p>
-                    <a href="" class="btn btn-primary">Read More</a>
+                <div class="container-fluid">
+                    <div class="slideText position-absolute top-50 start-50 translate-middle mt-2 text-white">
+                        <h2 class="fw-bold">Lorem ipsum dolor, sit amet.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio accusamus sint adipisci vero, beatae reprehenderit quos!</p>
+                        <a href="" class="btn btn-primary">Read More</a>
+                    </div>
                 </div>
             </div>
           </div>
-          <div class="swiper-slide position-relative text-center">
-            <img class=" vh-100 min-vw-100"  src="./img/Oppenheimer.jpeg" alt="">
-            <div class="overlay">
-                <div class="slideText position-absolute top-50 start-50 translate-middle text-center mt-2 text-white">
-                    <h2 class="fw-bold">Lorem ipsum dolor, sit amet.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio accusamus sint adipisci vero, beatae reprehenderit quos!</p>
-                    <a href="" class="btn btn-primary">Read More</a>
+          <div class="swiper-slide position-relative" style="background-image: url(./img/Oppenheimer.jpeg);">
+                <div class="overlay">
+                    <div class="container-fluid">
+                    <div class="slideText position-absolute top-50 start-50 translate-middle mt-2 text-white">
+                        <h2 class="fw-bold">Lorem ipsum dolor, sit amet.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio accusamus sint adipisci vero, beatae reprehenderit quos!</p>
+                        <a href="" class="btn btn-primary">Read More</a>
+                </div>
             </div>
             </div>
         </div>
-          <div class="swiper-slide position-relative text-center">
-            <img class=" vh-100 min-vw-100 " src="./img/Starwars.jpg" alt="">
+          <div class="swiper-slide position-relative">
             <div class="overlay">
-                <div class="slideText position-absolute top-50 start-50 translate-middle text-center mt-2 text-white">
-                    <h2 class="fw-bold">Lorem ipsum dolor, sit amet.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio accusamus sint adipisci vero, beatae reprehenderit quos!</p>
-                    <a href="" class="btn btn-primary">Read More</a>
-            </div>
+                <div class="container-fluid">
+                    <div class="slideText position-absolute top-50 start-50 translate-middle mt-2 text-white">
+                        <h2 class="fw-bold">Lorem ipsum dolor, sit amet.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio accusamus sint adipisci vero, beatae reprehenderit quos!</p>
+                        <a href="" class="btn btn-primary">Read More</a>
+                                </div>
+                            </div>
             </div>
           </div>
         </div>
@@ -185,7 +189,7 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js">
     </script>
     <script>
-        const swiper = new Swiper('.swiper', {
+        let swiper = new Swiper('.swiper', {
 
               direction: 'horizontal',
               loop: true,
