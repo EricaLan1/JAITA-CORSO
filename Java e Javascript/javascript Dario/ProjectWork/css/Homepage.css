@@ -36,3 +36,17 @@
 }
 
 /* aumentare la trasparenza dello sfondo e div scrritta del 100% */
+
+.containerTesto{
+  background-color: #fff;
+
+}
+
+.containerTesto h1, p{
+  color: black;
+  
+}
+
+.containerTesto p{
+  text-align: center;
+}
