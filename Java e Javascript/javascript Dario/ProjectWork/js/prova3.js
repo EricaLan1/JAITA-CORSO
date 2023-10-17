@@ -1,7 +1,7 @@
-    function cambioBg(bg, titolo) {
+    function cambioBg(Bg, titolo) {
         let banner = document.querySelector('.banner');
         let contenuti = document.querySelectorAll('.content');
-        banner.style.background = `url("../img/${bg}")`;
+        banner.style.background = `url("../img/${Bg}")`;
         banner.style.backgroundSize = 'cover';
         banner.style.backgroundPosition = 'center';
 

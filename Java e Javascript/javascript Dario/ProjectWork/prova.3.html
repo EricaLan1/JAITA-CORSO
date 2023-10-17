@@ -1,16 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-   
-    
-   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    
-    
+   
     <link rel="stylesheet" href="./css/prova3.css">
     <title>Caresello</title>
     
@@ -27,7 +23,7 @@
     </header>
 
     <div class="banner">
-        <div class="content interstellar active">
+        <div class="content Interstellar active">
         <img src="./img/logo interstellar.png" alt="" class="titolo">
         <h4>
             <span>2014</span><span><i>+14</i></span><span>2h 49min</span><span>Fantascienza</span>
@@ -43,7 +39,7 @@
         <div class="content Gatsby">
             <img src="./img/gatsby logo.png" alt="" class="titolo">
             <h4>
-                <span>2013</span><span><i>+14</i></span><span>2h 36min</span><span>Drammatico</span>
+                <span>2013</span><span><i>+14</i></span><span>2h 22min</span><span>Fantascienza</span>
             </h4>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis distinctio delectus dolores cupiditate dignissimos alias? Possimus, numquam commodi quam dolorem doloremque voluptates autem vel, doloribus unde accusantium nemo? Atque, voluptatibus.
@@ -56,7 +52,7 @@
             <div class="content Oppenheimer">
                 <img src="./img/Oppenheimer Logo.png" alt="" class="titolo">
                 <h4>
-                    <span>2023</span><span><i>+14</i></span><span>3h </span><span>Storico</span>
+                    <span>2023</span><span><i>+14</i></span><span>3h</span><span>Storico</span>
                 </h4>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis distinctio delectus dolores cupiditate dignissimos alias? Possimus, numquam commodi quam dolorem doloremque voluptates autem vel, doloribus unde accusantium nemo? Atque, voluptatibus.
@@ -66,10 +62,10 @@
                     <a href="#"><i class="bi bi-plus-lg"></i>My List</a>
                 </div>
                 </div>
-                <div class="content starwars">
-                    <img src="./img/Starwars logo.svg" alt="" class="titolo">
+                <div class="content Starwars">
+                    <img src="./img/starwars-logo.png" alt="" class="titolo">
                     <h4>
-                        <span>	2005</span><span><i>+14</i></span><span>2h 20min</span><span>Fantascienza</span>
+                        <span>2005</span><span><i>+14</i></span><span>2h 20min</span><span>Fantascienza</span>
                     </h4>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis distinctio delectus dolores cupiditate dignissimos alias? Possimus, numquam commodi quam dolorem doloremque voluptates autem vel, doloribus unde accusantium nemo? Atque, voluptatibus.
@@ -81,73 +77,44 @@
                     </div>
 
 
-        <div class="carousel-box">
-        
+    <div class="carousel-box">
         <div class="carousel">
-            <div class="carousel-item" onclick="cambioBg('Interstellar.jpg', 'interstellar');">
-               
+            <div class="carousel-item" onclick="cambioBg('Interstellar.jpg','Interstellar')">
                 <img src="./img/interstellarPoster.jpg" alt="">
             </div>
-            <div class="carousel-item" onclick="cambioBg('Gatsby.jpg', 'Gatsby');">
-                
+            <div class="carousel-item" onclick="cambioBg('Gatsby.jpg','Gatsby')">
                 <img src="./img/gatsbyPoster.jpg" alt="">
             </div>
-            <div class="carousel-item" onclick="cambioBg('Oppenheimer.jpeg', 'Oppenheimer');">
-               
+            <div class="carousel-item" onclick="cambioBg('Oppenheimer.jpeg','Oppenheimer')">
                 <img src="./img/OppenheimerPoster.jpeg" alt="">
             </div>
-            <div class="carousel-item" onclick="cambioBg('starwars.jpg', 'starwars');">
-                
+            <div class="carousel-item" onclick="cambioBg('Starwars.jpg','Starwars')">
                 <img src="./img/starwarsPoster.jpg" alt="">
             </div>
         </div>
-
+       
     </div>
+    <a href="#" class="play"><i class="bi bi-play-circle"></i>Watch Trailer</a>
     <ul class="sci">
         <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
         <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
         <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
     </ul>
     </div>
-    <a href="#" class="play"><i class="fa-regular fa-circle-play"></i>Watch Trailer</a>
+   
 
 
-    
-
-<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
 
 
 <script src="./js/prova3.js"></script>
 
 <script>
-//    $(document).ready(function(){
-//     $('.carusel').carusel();
-//   })
+   $(document).ready(function(){
+    $('.carousel').carousel();
+  });
 
-
-let swiper = new Swiper('.swiper', {
-
-direction: 'horizontal',
-loop: true,
-
-pagination: {
-    el: ".swiper-pagination",
-    clickable: true
-},
-
-navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-},
-
-scrollbar: {
-    el: '.swiper-scrollbar',
-},
-
-
-});
 
 </script>
 </body>
