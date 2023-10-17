@@ -112,7 +112,7 @@ header{
     transition: 0.5s;
 }
 
-.titolo{
+.titolo-film{
     max-width: 250px;
 }
 
@@ -203,12 +203,10 @@ header{
 .carousel .carousel-item{
     width: 250px;
     cursor: pointer;
-    display: flex;
 }
-    
-.carousel .carousel-item img{
+
+.carousel.carousel-item img{
     max-width: 235px;
-    
     border-radius: 10px;
     transform: translateX(8px) translateY(-100px);
     object-fit: cover;
@@ -231,7 +229,7 @@ header{
     cursor: pointer !important;
     transition: 0.3s;
 }
-        
+
 .play i{
     margin-right: 10px;
     font-size: 40px;
@@ -266,15 +264,3 @@ header{
 .sci a:hover{
     color: var(--primary);
 }
-
-/* .containerTesto{
-    text-align: center;
-    padding: 0 30% 0 30%;
-    font-size: 18px;
-    max-width: 100%;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    
-} */
-
-        
