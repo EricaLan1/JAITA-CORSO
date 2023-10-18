@@ -16,6 +16,10 @@ section .section-title {
     color: #eee;
 }
 
+/* short end: flex grow(quanto un elemento deve crescere rispetto ai suoi fratelli), flex shrink(e' l'abilita'di un elemento flex di rimpicciolire se necessario) , flex basis(definisce una grandezza di default dell'elemento, es dargli una width)  
+gli stiamo dicendo di dividersi equamente lo stesso spazio*/
+
+
 #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     color: #ffffff;
     background-color: transparent;
@@ -30,4 +34,34 @@ section .section-title {
     border-top-right-radius: .25rem;
     color: #ffffff;
     font-size: 1.2rem;
+}
+
+
+.evento{
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.evento .card-body{
+    margin-top: -2rem;
+}
+
+
+.evento .card-body .card-content{
+    background-color: #fff;
+    padding: 0.5rem;  
+}
+
+/* short end: flex grow(quanto un elemento deve crescere rispetto ai suoi fratelli), flex shrink(e' l'abilita'di un elemento flex di rimpicciolire se necessario) , flex basis(definisce una grandezza di default dell'elemento, es dargli una width)  
+gli stiamo dicendo di dividersi equamente lo stesso spazio*/
+@media screen and (min-width: 518px){
+    .nav-tabs .nav-item{
+        flex: 1; 
+    } 
+
+    .evento .card-body .card-content{
+        padding: 1rem;
+    }
+    
 }
