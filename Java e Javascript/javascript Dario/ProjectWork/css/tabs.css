@@ -1,0 +1,33 @@
+section {
+    padding: 2rem 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #64706d;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+#tabs{
+	background: #64706d;
+    color: #eee;
+}
+#tabs h6.section-title{
+    color: #eee;
+}
+
+#tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #ffffff;
+    background-color: transparent;
+    border-color: transparent transparent #ffffff;
+    border-bottom: 4px solid !important;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+#tabs .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color: #ffffff;
+    font-size: 1.2rem;
+}

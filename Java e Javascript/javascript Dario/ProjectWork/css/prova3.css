@@ -115,7 +115,7 @@ header{
 
 .titolo{
     max-width: 350px;
-    
+    animation: 2s anim-lineUp ease-out none;
 }
 
 .banner .content h4{
@@ -127,6 +127,45 @@ header{
 .banner .content h4 span{
     padding: 0 10px;
     border-right: 1px solid rgba(255, 255, 255, 0.5);
+    animation: 2s anim-lineUp ease-out none;
+    
+}
+
+.banner .content p{
+    animation: 2s anim-lineUp ease-out none ;
+    ;
+    
+}
+
+.button{
+    animation: 2s anim-lineUp ease-out none;
+    
+}
+
+fadeIn { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
 }
 
 .banner .content h4 span:first-child{
