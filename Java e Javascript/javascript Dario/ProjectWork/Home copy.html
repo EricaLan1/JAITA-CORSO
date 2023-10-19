@@ -6,14 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Homepage</title>
 
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
 
-
+  <link rel="stylesheet" href="./css/prova3.css">
   <link rel="stylesheet" href="./css/Homepage.css">
   <link rel="stylesheet" href="./prova5.css">
   <link rel="stylesheet" href="./css/tabs.css">
@@ -22,7 +23,7 @@
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+  <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary ">
 
     <div class="container">
       <a class="navbar-brand" href="#"><img src="./img/logo pokemon.svg" alt="Homepage" height="50rem"></a>
@@ -71,60 +72,142 @@
         </div>
       </div>
     </div>
-  </nav>
+  </nav> -->
 
+<!-- HOME FILM -->
+<header>
+  <a href="#" class="logo">Imovies</a>
+  <ul class="nav">
+      <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+      <li><a href="#">Event</a></li>
+      <li><a href="#">Shop</a></li>
+  </ul>
+  <a href="#" class="accesso">Accedi</a>
 
-  <div class="Hero">
-    <div class="swiper-container vh-100 ">
-      <div class="swiper-wrapper  ">
-        <div class="swiper-slide position-relative" style="background-image: url(./img/Interstellar.jpg);">
-          <!-- <img class=" vh-100 min-vw-100"  src="./img/Interstellar.jpg" alt=""> -->
-          <div class="overlay">
-            <div class="container-fluid">
-              <div class="slideText position-absolute top-50 start-50 translate-middle mt-2 text-white">
-                <h2 class="fw-bold">Lorem ipsum dolor, sit amet.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio accusamus sint adipisci vero,
-                  beatae reprehenderit quos!</p>
-                <a href="" class="btn btn-primary">Read More</a>
-              </div>
-            </div>
-          </div>
+  <!-- <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Offcanvas navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="swiper-slide position-relative" style="background-image: url(./img/Oppenheimer.jpeg);">
-          <div class="overlay">
-            <div class="container-fluid">
-              <div class="slideText position-absolute top-50 start-50 translate-middle mt-2 text-white">
-                <h2 class="fw-bold">Lorem ipsum dolor, sit amet.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio accusamus sint adipisci vero,
-                  beatae reprehenderit quos!</p>
-                <a href="" class="btn btn-primary">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide position-relative">
-          <div class="overlay">
-            <div class="container-fluid">
-              <div class="slideText position-absolute top-50 start-50 translate-middle mt-2 text-white">
-                <h2 class="fw-bold">Lorem ipsum dolor, sit amet.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio accusamus sint adipisci vero,
-                  beatae reprehenderit quos!</p>
-                <a href="" class="btn btn-primary">Read More</a>
-              </div>
-            </div>
-          </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
         </div>
       </div>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-scrollbar"></div>
     </div>
+  </nav> -->
+</header>
+
+<div class="banner">
+  <div class="content Interstellar active">
+  <img src="./img/logo interstellar.png" alt="" class="titolo">
+  <h4>
+      <span>2014</span><span><i>+14</i></span><span>2h 49min</span><span>Fantascienza</span>
+  </h4>
+  <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis distinctio delectus dolores cupiditate dignissimos alias? Possimus, numquam commodi quam dolorem doloremque voluptates autem vel, doloribus unde accusantium nemo? Atque, voluptatibus.
+  </p>
+  <div class="button">
+      <a href="#"><i class="fa-solid fa-play"></i>Guarda</a>
+      <a href="#"><i class="fa-solid fa-plus"></i>My List</a>
   </div>
-  <main>
+  </div>
+  <div class="content Gatsby">
+      <img src="./img/gatsby logo.png" alt="" class="titolo">
+      <h4>
+          <span>2013</span><span><i>+14</i></span><span>2h 22min</span><span>Fantascienza</span>
+      </h4>
+      <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis distinctio delectus dolores cupiditate dignissimos alias? Possimus, numquam commodi quam dolorem doloremque voluptates autem vel, doloribus unde accusantium nemo? Atque, voluptatibus.
+      </p>
+      <div class="button">
+          <a href="#"><i class="bi bi-play-fill"></i>Guarda</a>
+          <a href="#"><i class="bi bi-plus-lg"></i>My List</a>
+      </div>
+      </div>
+      <div class="content Oppenheimer">
+          <img src="./img/Oppenheimer Logo.png" alt="" class="titolo">
+          <h4>
+              <span>2023</span><span><i>+14</i></span><span>3h</span><span>Storico</span>
+          </h4>
+          <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis distinctio delectus dolores cupiditate dignissimos alias? Possimus, numquam commodi quam dolorem doloremque voluptates autem vel, doloribus unde accusantium nemo? Atque, voluptatibus.
+          </p>
+          <div class="button">
+              <a href="#"><i class="bi bi-play-fill"></i>Guarda</a>
+              <a href="#"><i class="bi bi-plus-lg"></i>My List</a>
+          </div>
+          </div>
+          <div class="content Starwars">
+              <img src="./img/starwars-logo.png" alt="" class="titolo">
+              <h4>
+                  <span>2005</span><span><i>+14</i></span><span>2h 20min</span><span>Fantascienza</span>
+              </h4>
+              <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis distinctio delectus dolores cupiditate dignissimos alias? Possimus, numquam commodi quam dolorem doloremque voluptates autem vel, doloribus unde accusantium nemo? Atque, voluptatibus.
+              </p>
+              <div class="button">
+                  <a href="#"><i class="bi bi-play-fill"></i>Guarda</a>
+                  <a href="#"><i class="bi bi-plus-lg"></i>My List</a>
+              </div>
+              </div>
 
-  </main>
 
+<div class="carousel-box">
+  <div class="carusel">
+      <div class="carusel-item" onclick="cambioBg('Interstellar.jpg','Interstellar')">
+          <img src="./img/interstellarPoster.jpg" alt="">
+      </div>
+      <div class="carusel-item" onclick="cambioBg('Gatsby.jpg','Gatsby')">
+          <img src="./img/gatsbyPoster.jpg" alt="">
+      </div>
+      <div class="carusel-item" onclick="cambioBg('Oppenheimer.jpeg','Oppenheimer')">
+          <img src="./img/OppenheimerPoster.jpeg" alt="">
+      </div>
+      <div class="carusel-item" onclick="cambioBg('Starwars.jpg','Starwars')">
+          <img src="./img/starwarsPoster.jpg" alt="">
+      </div>
+  </div>
+ 
+</div>
+<a href="#" class="play"><i class="bi bi-play-circle"></i>Watch Trailer</a>
+<ul class="sci">
+  <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+  <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+  <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+</ul>
+</div>
+
+  <!-- PRESENTAZIONE -->
   <div class="containerTesto w-100 text-center py-5" style="padding: 0 30% 0 30%; font-size: 18px;">
     <h1 class="benvenutoTitolo py-5">Benvenuti da blabla!</h1>
     <p class="focus mx-5">Considerate la vostra semenza: <br>
@@ -136,184 +219,264 @@
   </div>
 
 
- <!-- CAROSELLO -->
+  <!-- CAROSELLO -->
   <h1 class="inostriEventi py-5 text-center">Eventi disponibili</h1>
   <div class="swiper mySwiper pb-5">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <div class="card bg-white" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
+        <div class="card  evento" >
+          <img src="img/attuali-pulpfiction.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">C</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-content" id="contenuti">
+            <h5 class="card-title text-white">Pulp Fiction</h5>
+            <p class="card-text text-white"><span><button type="button" class="btn btn-warning">Info</button></span> 24 Ottobre 2023, Napoli</p>
+          </div>
           </div>
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="card bg-white" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
+        <div class="card  evento" >
+          <img src="img/attuali-gatsby.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-content" id="contenuti">
+            <h5 class="card-title text-white">Pulp Fiction</h5>
+            <p class="card-text text-white"><span><button type="button" class="btn btn-warning">Info</button></span> 26 Ottobre 2023, Napoli</p>
+          </div>
           </div>
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="card bg-white" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
+       
+        <div class="card  evento" >
+          <img src="img/attuali-interstellarar.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-content" id="contenuti">
+            <h5 class="card-title text-white">Interstellar</h5>
+            <p class="card-text text-white"><span><button type="button" class="btn btn-warning">Info</button></span> 30 Ottobre 2023, Napoli</p>
+          </div>
           </div>
         </div>
+
+
       </div>
       <div class="swiper-slide">
-        <div class="card bg-white" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
+        
+        <div class="card  evento" >
+          <img src="img/attuali-starwars.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-content" id="contenuti">
+            <h5 class="card-title text-white">Star wars: Revenge of the sith</h5>
+            <p class="card-text text-white"><span><button type="button" class="btn btn-warning">Info</button></span> 4 Novembre 2023, Napoli</p>
+          </div>
           </div>
         </div>
+
+
       </div>
       <div class="swiper-slide">
-        <div class="card bg-white" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
+        
+        <div class="card  evento" >
+          <img src="img/attuali-Oppenheimer.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-content" id="contenuti">
+            <h5 class="card-title text-white">Oppenheimer</h5>
+            <p class="card-text text-white"><span><button type="button" class="btn btn-warning">Info</button></span> 10 Novembre 2023, Napoli</p>
+          </div>
           </div>
         </div>
       </div>
+
       <div class="swiper-slide">
-        <div class="card bg-white" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
+        <div class="card  evento" >
+          <img src="img/attuali-coldplay.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-content" id="contenuti">
+            <h5 class="card-title text-white">ColdPlay</h5>
+            <p class="card-text text-white"><span><button type="button" class="btn btn-warning">Info</button></span> 13 Novembre 2023, Napoli</p>
+          </div>
           </div>
         </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card bg-white" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        <div class="swiper-slide">
+          <div class="card  evento" >
+            <img src="img/attuali-5sos.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="card-content" id="contenuti">
+              <h5 class="card-title text-white">5 Seconds of Summer</h5>
+              <p class="card-text text-white"><span><button type="button" class="btn btn-warning">Info</button></span> 17 Novembre 2023, Napoli</p>
+            </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card bg-white" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+
+          <div class="swiper-slide">
+            <div class="card  evento" >
+              <img src="img/attuali-elodie.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="card-content" id="contenuti">
+                <h5 class="card-title text-white">Elodie</h5>
+                <p class="card-text text-white"><span><button type="button" class="btn btn-warning">Info</button></span> 22 Novembre 2023, Napoli</p>
+              </div>
+              </div>
+            </div>
           </div>
-        </div>
+
+          <div class="swiper-slide">
+            <div class="card  evento" >
+              <img src="img/attuali-fob.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="card-content" id="contenuti">
+                <h5 class="card-title text-white">Fall out Boy</h5>
+                <p class="card-text text-white"><span><button type="button" class="btn btn-warning">Info</button></span> 28 Novembre 2023, Napoli</p>
+              </div>
+              </div>
+            </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card  evento" >
+                <img src="img/attuali-rammstein.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <div class="card-content" id="contenuti">
+                  <h5 class="card-title text-white">Rammstein</h5>
+                  <p class="card-text text-white"><span><button type="button" class="btn btn-warning">Info</button></span> 1 Dicembre 2023, Napoli</p>
+                </div>
+                </div>
+              </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card  evento" >
+                  <img src="img/attuali-ragione-e-sentimento.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="card-content" id="contenuti">
+                    <h5 class="card-title text-white">Ragione e Sentimento</h5>
+                    <p class="card-text text-white"><span><button type="button" class="btn btn-warning">Info</button></span> 10 Dicembre 2023, Napoli</p>
+                  </div>
+                  </div>
+                </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card  evento" >
+                    <img src="img/attuali-sogni.illusioni.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <div class="card-content" id="contenuti">
+                      <h5 class="card-title text-white">Sogni e illusioni di libertà</h5>
+                      <p class="card-text text-white"><span><button type="button" class="btn btn-warning">Info</button></span> 16 Dicembre 2023, Napoli</p>
+                    </div>
+                    </div>
+                  </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="card  evento" >
+                      <img src="img/attuali-lalinguaospite.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <div class="card-content" id="contenuti">
+                        <h5 class="card-title text-white">La lingua ospite</h5>
+                        <p class="card-text text-white"><span><button type="button" class="btn btn-warning">Info</button></span> 20 Dicembre 2023, Napoli</p>
+                      </div>
+                      </div>
+                    </div>
+          
+
       </div>
-      <div class="swiper-slide">
-        <div class="card bg-white" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
       </div>
-    </div>
+
     <div class="swiper-pagination"></div>
   </div>
 
-
-  <!-- EVENTI FUTURI -->
+<!-- EVENTI FUTURI -->
   <section id="tabs">
     <div class="container">
-      <h6 class="section-title h1">Eventi Futuri</h6>
-      
-      <nav>
-        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
-            aria-controls="nav-home" aria-selected="true">Concerto</a>
-          <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
-            aria-controls="nav-profile" aria-selected="false">Rassegna Letteraria</a>
-        </div>
-      </nav>
-      <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 
+      <h6 class="section-title h1">Eventi Futuri</h6>
+
+      <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+            type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Concerti</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+            type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Rassegna Letteraria</button>
+        </li>
+
+      </ul>
+
+      <div class="tab-content py-3 px-3 px-sm-0" id="myTabContent">
+
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+          tabindex="0">
           <div class="row">
-            <!-- CARD 1 -->
+
             <div class="col-lg-6">
               <div class="card evento">
                 <img src="/img/futuri-imaginedragons.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
 
                   <div class="card-content">
-                    <h5 class="card-title">Imagine Dragons</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a
-                      natural lead-in to additional content. This content is a little bit
-                      longer.</p>
+                    <h5 class="card-title text-black d-flex justify-content-between">Imagine Dragons</h5>
+                    <p class="card-text"><span><button type="button" class="btn btn-warning">Info</button></span> <span>7 Gennaio 2024, Napoli</span></p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- CARD 2 -->
+
             <div class="col-lg-6">
               <div class="card evento">
                 <img src="/img/futuri-taylor.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <div class="card-content">
-                    <h5 class="card-title">Taylor Swift</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a
-                      natural lead-in to additional content. This content is a little bit
-                      longer.</p>
+                    <h5 class="card-title text-black">Taylor Swift</h5>
+                    <p class="card-text"><span><button type="button" class="btn btn-warning">Leggi</button></span> <span>25 Dicembre 2024, Napoli</span></p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
+
+
+
         </div>
-        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+
+        <div class="row">
           <div class="col-lg-6">
             <div class="card evento">
-              <img src="/img/futuri-taylor.png" class="card-img-top" alt="...">
+              <img src="/img/futuri-signoredeglianelli.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <div class="card-content">
-                  <h5 class="card-title">Signore degli anelli</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a little bit longer.
-                  </p>
+                  <h5 class="card-title text-black">Signore degli anelli</h5>
+                  <p class="card-text"><span><button type="button" class="btn btn-warning">Leggi</button></span> <span>27 Novembre 2024, Napoli</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card evento">
+              <img src="/img/futuri-game of thrones.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="card-content">
+                  <h5 class="card-title text-black">Il mondo del ghiaccio e del fuoco</h5>
+                  <p class="card-text"><span><button type="button" class="btn btn-warning">Leggi</button></span> <span>5 Agosto 2024, Napoli</span></p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- </div>
-              </div> -->
+
+
+        </div>
+
+      </div>
     </div>
   </section>
+
 
   <!-- CALENDARIO -->
   <div class="container text-center bg-white ">
@@ -370,19 +533,16 @@
           <h5 class=" fs-4 mb-4"><strong>NomeSito</strong></h5>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, necessitatibus quos perferendis optio
           nobis maiores iste dolorib
-          <ul class="list-unstyled  mt-2">
+          <ul class="list-unstyled  my-2">
             <li>
-              Centro Direzionale
+              <i class="fa-solid fa-location-dot my-4" style="color: #a9a066;"></i>Centro Direzionale, NA 535022, IT
+            </li>
+            
+            <li>
+              <i class="fa-solid fa-phone" style="color: #a9a066;"></i><strong>Phone:</strong>+1 5589 55488 55
             </li>
             <li>
-              NA 535022, IT
-            </li>
-            <br>
-            <li>
-              <strong>Phone:</strong>+1 5589 55488 55
-            </li>
-            <li>
-              <strong>Email:</strong> nomeSito@example.com
+              <i class="fa-solid fa-envelope" style="color: #a9a066;"></i><strong>Email:</strong> nomeSito@example.com
             </li>
 
           </ul>
@@ -391,15 +551,27 @@
 
         <div class="col-lg-2 mx-auto ">
 
-          <h6 class=" mb-3">Popular events img</h5>
+          <h6 class=" mb-3">Link Utili</h5>
 
             <ul class="list-unstyled fw-">
               <li class="my-2">
-                <p><i class="ri-arrow-right-s-line"></i> Home</p>
+                <p><i class="ri-arrow-right-s-line text-white"> Home</i></p>
               </li>
               <li class="my-2">
-                <p><i class="ri-arrow-right-s-line"></i> Event</p>
+                <p><i class="ri-arrow-right-s-line text-white"> Eventi Disponibili</i></p>
               </li>
+              <li class="my-2">
+                <p><i class="ri-arrow-right-s-line text-white"> Eventi Futuri</i></p>
+              </li>
+              <li class="my-2">
+                <p><i class="ri-arrow-right-s-line text-white"> Top 3</i></p>
+              </li>
+              <li class="my-2">
+                <p><i class="ri-arrow-right-s-line text-white"> Calendario</i></p>
+              </li>
+
+
+
 
             </ul>
 
@@ -421,18 +593,17 @@
                 </div>
               </li>
               <li class="my-3">
-                <button class="btn btn-secondary me-1" type="button"><i class="bi bi-twitter-x"></i></button>
-                <button class="btn btn-secondary me-1" type="button"><i class="ri-facebook-fill"></i></button>
-                <button class="btn btn-secondary me-1" type="button"><i class="bi bi-instagram"></i></button>
-                <button class="btn btn-secondary me-1" type="button"><i class="bi bi-youtube"></i></button>
-                <button class="btn btn-secondary me-1" type="button"><i class="bi bi-linkedin"></i></button>
+                <a href=""><i class="fa-brands fa-x-twitter" style="color: #a9a066;"></i></a>
+                <a href=""><i class="fa-brands fa-facebook-f" style="color: #a9a066;"></i></a>
+                <a href=""><i class="fa-brands fa-instagram" style="color: #a9a066;"></i></a>
+                <a href=""><i class="fa-brands fa-youtube" style="color: #a9a066;"></i></a>
               </li>
             </ul>
 
         </div>
 
       </div>
-
+      <button type="button" class="btn btn-primary justify-content-end "><i class="fa-solid fa-arrow-up"></i></button>
     </div>
 
     <div class="footer-copyright text-center py-3  text-white">
@@ -476,19 +647,23 @@
         clickable: true
       }
     });
+
+
+    $(document).ready(function(){
+    $('.carusel').carusel();
+  });
+
   </script>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-  </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
-    integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous">
-  </script>
-  <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
-    integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous">
-  </script>
+
+  <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script src="./js/prova3.js"></script>
 </body>
 
 </html>

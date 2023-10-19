@@ -235,13 +235,13 @@ fadeIn { /* Safari and Chrome */
 
 }
 
-.carousel {
+.carusel {
     position: relative;
     height: 550px;
     perspective: 1500px;
 }
 
-.carousel .carousel-item{
+.carusel .carusel-item{
     width: 250px;
     height: 580px;
     cursor: pointer;
@@ -249,7 +249,7 @@ fadeIn { /* Safari and Chrome */
     object-position: center;
 }
     
-.carousel .carousel-item img{
+.carusel .carusel-item img{
     max-width: 235px;
     margin-top: 70%;
     border-radius: 10px;
