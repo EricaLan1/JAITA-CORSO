@@ -324,5 +324,16 @@ fadeIn { /* Safari and Chrome */
 .social i {
     padding: 0.5rem;
     font-size: 1.5rem;
+    cursor: pointer !important;
 }
-        
+
+.social i:hover{
+    color: var(--primary);
+}
+
+
+.info i{
+    
+    padding: 0rem 0.8rem;
+}
+
