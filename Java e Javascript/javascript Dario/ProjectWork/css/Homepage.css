@@ -97,3 +97,53 @@
   border-width: 1px;
   border-style: solid;
 }
+
+/* .testoSopra{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+} */
+
+.testoGiu{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.descrizioneData-Lato .descrizioneData-Latob .descrizioneData{
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.descrizioneData-Latob{
+vertical-align: baseline;
+  outline: none;
+  font-size: 12px;
+  line-height: 26px;
+}
+
+.descrizioneData{
+  font-size: 12px;
+  line-height: 26px;
+  
+}
+
+.titoloCalendario{
+  font-size: 22px;
+  line-height: 32px;
+}
+
+.col-1{
+  margin-right: 20%;
+}
+
+.tsa{
+  transform: translateX(-73%);
+  left: 50%;
+  
+}
