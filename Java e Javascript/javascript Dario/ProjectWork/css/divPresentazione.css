@@ -1,9 +1,9 @@
 .containerTesto{
-    background-image: url(/img/marmoBenvenuto.jpg);
-    opacity: 0.5;
+    background-image: url(/img/marmoBenvenuto.png);
+    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    opacity: 0.5;
+    
 }
 
