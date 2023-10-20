@@ -140,3 +140,15 @@ vertical-align: baseline;
   left: 50%;
   
 }
+
+.evento {
+  background-image: url(/img/sfondoEventifuturi.png);
+  background-repeat: no;
+  background-size: cover;
+}
+
+.inostriEventi{
+  background-image: url(/img/sfondoTitolo.png);
+  background-repeat: no;
+  background-size: cover;
+}

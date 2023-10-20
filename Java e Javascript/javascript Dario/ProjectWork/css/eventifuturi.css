@@ -40,18 +40,18 @@ gli stiamo dicendo di dividersi equamente lo stesso spazio*/
 }
 
 
-.evento{
+.eventi{
     background-color: transparent;
     border: none;
     box-shadow: none;
 }
 
-.evento .card-body{
+.eventi .card-body{
     margin-top: -2rem;
 }
 
 
-.evento .card-body .card-content{
+.eventi .card-body .card-content{
     background-color: #fff;
     padding: 0.5rem;  
 }
