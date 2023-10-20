@@ -3,16 +3,16 @@
 
 
 .box{
-    background-image: url(/poltrone.png);
-    height: 400px;
+    background-image: url(/img/poltrone.png);
+    height: 600px;
     background-size: cover;
     display: block;
     
 }
 
-h1{
+.virgolette{
     font-family: 'Cormorant Garamond', serif;
-    font-size: 120px;
+    font-size: 200px;
     color: white;
     text-align: center;
     margin-top: 0px;
@@ -20,7 +20,7 @@ h1{
     
 }
 
-h4 {
+.frase {
     font-family: 'Cormorant Garamond', serif;
     font-size: 40px;
     line-height: 52px;
@@ -30,10 +30,10 @@ h4 {
 }
 
 
-h3{
+.di{
     font-family: 'Cormorant Garamond', serif;
     font-size:24px;
-    line-height:34px;
+    line-height:100px;
     font-weight:bold;
     font-style:normal;
     text-transform:none;
@@ -42,7 +42,7 @@ h3{
     text-align: center;
 }
 
-h6{
+.libro{
     
 	font-size:15px;
 	line-height:1px;
@@ -50,5 +50,10 @@ h6{
 	text-decoration:none;
     color: white;
     text-align: center;
+    
+}
+
+.navigation{
+    color: #a9a066;
 }
 
