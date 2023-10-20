@@ -221,7 +221,7 @@ fadeIn { /* Safari and Chrome */
     background: var(--primary)
 }
 
-.banner .carousel-box{
+.banner .swiper-box{
     position: relative;
     min-width: 950px;
     display: flex;
@@ -235,13 +235,13 @@ fadeIn { /* Safari and Chrome */
 
 }
 
-.carusel {
+.swiper-wrapper {
     position: relative;
     height: 550px;
     perspective: 1500px;
 }
 
-.carusel .carusel-item{
+.swiper-wrapper .swiper-slide{
     width: 250px;
     height: 400px;
     cursor: pointer;
@@ -249,7 +249,7 @@ fadeIn { /* Safari and Chrome */
     object-position: center;
 }
     
-.carusel .carusel-item img{
+.swiper-wrapper .swiper-slide img{
     max-width: 235px;
     
     border-radius: 10px;

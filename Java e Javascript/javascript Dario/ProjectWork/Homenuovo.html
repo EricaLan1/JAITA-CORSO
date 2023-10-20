@@ -8,7 +8,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
@@ -16,8 +16,8 @@
 
   <link rel="stylesheet" href="./css/BannerHome.css">
   <link rel="stylesheet" href="./css/Homepage.css">
-  <link rel="stylesheet" href="./prova5.css">
-  <link rel="stylesheet" href="./css/tabs.css">
+  <link rel="stylesheet" href="./css/cardtop3.css">
+  <link rel="stylesheet" href="./css/eventifuturi.css">
 </head>
 
 <body>
@@ -25,18 +25,15 @@
   
 <!-- NAVBAR HOME -->
 <header>
-  <a href="#" class="logo" id="return">Imovies</a>
+ 
   <ul class="nav">
       <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
       <li><a href="#">Event</a></li>
       <li><a href="#">Shop</a></li>
   </ul>
   <a href="#" class="accesso">Accedi</a>
-
 </header>
 
-
-<!-- BANNER HOME -->
 <div class="banner">
   <div class="content Interstellar active">
   <img src="./img/logo interstellar.png" alt="" class="titolo">
@@ -91,7 +88,7 @@
               </div>
               </div>
 
-
+<!-- SFONDO -->
 <div class="carousel-box">
   <div class="carusel">
       <div class="carusel-item" onclick="cambioBg('Interstellar.jpg','Interstellar')">
@@ -108,6 +105,9 @@
       </div>
   </div>
  
+</div>
+ 
+<!-- ICON SOCIAL -->
 </div>
 <a href="#" class="play"><i class="bi bi-play-circle"></i>Watch Trailer</a>
 <ul class="sci">
@@ -559,18 +559,18 @@
     });
 
 
-    $(document).ready(function(){
-    $('.carusel').carusel();
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems, options);
   });
 
   </script>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+ 
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
   <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
   <script src="./js/prova3.js"></script>
