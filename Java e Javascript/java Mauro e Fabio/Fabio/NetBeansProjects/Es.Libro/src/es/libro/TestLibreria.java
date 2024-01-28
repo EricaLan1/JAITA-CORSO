@@ -8,10 +8,10 @@ public class TestLibreria {
         Libreria libreria = new Libreria();
 
         // Aggiungiamo alcuni libri di esempio
-        libreria.aggiungiLibro(new EsLibro("Libro 1", "Autore 1", 19.99));
-        libreria.aggiungiLibro(new EsLibro("Libro 2", "Autore 2", 24.99));
-        libreria.aggiungiLibro(new EsLibro("Libro 3", "Autore 1", 14.99));
-        libreria.aggiungiLibro(new EsLibro("Libro 4", "Autore 3", 29.99));
+        libreria.aggiungiLibro(new EsLibro("Libro pace", "Autore 1", 19.99));
+        libreria.aggiungiLibro(new EsLibro("Libro giustizia", "Autore 2", 24.99));
+        libreria.aggiungiLibro(new EsLibro("Libro lotta", "Autore 1", 14.99));
+        libreria.aggiungiLibro(new EsLibro("Libro guerra", "Autore 3", 29.99));
 
         System.out.println("Libreria:");
         System.out.println(libreria.toString());

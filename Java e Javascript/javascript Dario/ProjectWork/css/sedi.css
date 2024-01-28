@@ -1,0 +1,24 @@
+.containerSedi{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.galleriaSedi{
+   
+   margin: 0;
+   padding: 0;
+   float: left;
+}
+
+.galleriaSedi img{
+    height: 475px;
+}
+
+.sediCinema{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+

@@ -45,7 +45,7 @@ function User(nomeCognome2, codiceFiscale2, eta2,){
             }
 
             if (nome2 =="" || cognome2 == "") {
-                feed2.innerHtml = "Il nome e cognome non e' ben compilato <br>"
+                feed2.innerHtml = "Il nome e cognome non e' ben compilato <br>";
             }
          
             if (codFisc2 == "" || codFisc2.length < 16) {
