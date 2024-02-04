@@ -3,7 +3,15 @@ package piattaformastreaming;
 public class Contenuto {
 
 	private String titolo;
+	
 
+	public Contenuto(String titolo) {
+		this.titolo = titolo;
+	}
+
+	
+	
+	
 	public String getTitolo() {
 		return titolo;
 	}

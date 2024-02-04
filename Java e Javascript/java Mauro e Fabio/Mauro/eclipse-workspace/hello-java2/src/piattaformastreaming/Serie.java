@@ -6,9 +6,21 @@ public class Serie extends Contenuto{ // contenuto diventa la superclasse di Ser
 	
 	private int stagione;
 	private int numerodiEpisodi;
+	
+	
+	public Serie(String titolo, int stagione, int numerodiEpisodi) {
+		// prendo il parametro titolo e lo passo al costruttore della superclasse
+		super(titolo);
+		this.stagione = stagione;
+		this.numerodiEpisodi = numerodiEpisodi;
+		
+	}
+	
+	
 	public int getStagione() {
 		return stagione;
 	}
+	
 	public int getNumerodiEpisodi() {
 		return numerodiEpisodi;
 	}
@@ -18,6 +30,8 @@ public class Serie extends Contenuto{ // contenuto diventa la superclasse di Ser
 	public void setNumerodiEpisodi(int numerodiEpisodi) {
 		this.numerodiEpisodi = numerodiEpisodi;
 	}
+	
+	
 	
 	@Override  // vuol dire che questo metodo scritto nella mia super classe l'ho ereditato e voglio riscriverlo nella mia serie
 	public void play() {
